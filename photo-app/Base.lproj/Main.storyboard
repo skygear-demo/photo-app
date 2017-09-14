@@ -58,6 +58,9 @@
                                 <frame key="frameInset" minX="132" minY="568" width="111" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginDidPress:" destination="9pv-A4-QxB" eventType="touchUpInside" id="6iw-Dp-fwz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
