@@ -79,5 +79,29 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+    
+    @IBAction func addPhotoButtonDidPress(_ sender: AnyObject) {
+        self.presentImagePicker()
+    }
+    func presentImagePicker() {
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.modalPresentationStyle = .popover
+        imagePicker.allowsEditing = false
+        imagePicker.sourceType = .photoLibrary
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
+
+}
+
+extension SecondViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+    
+    // Add implementation here
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage
+        dismiss(animated: true, completion: {
+        })
+    }
 }
 
