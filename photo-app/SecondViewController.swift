@@ -59,16 +59,17 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //return self.posts.count
-        return 5
+        return self.posts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let newsCell = tableView.dequeueReusableCell(withIdentifier: "feedcell", for: indexPath) as! FeedCell
         
         // Configure the cell...
-        newsCell.titleLabel.text = "Title1"
-        newsCell.contentLabel.text = "Content2"
+        let record = self.posts[indexPath.row]
+        let post = record as? SKYRecord
+        newsCell.titleLabel.text = post?.object(forKey: "title") as? String
+        newsCell.contentLabel.text = post?.object(forKey: "content") as? String
         
         return newsCell
 
