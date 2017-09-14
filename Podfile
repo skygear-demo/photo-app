@@ -6,5 +6,6 @@ target 'photo-app' do
   use_frameworks!
 
   # Pods for photo-app
+  pod 'SKYKit'
 
 end

@@ -1,0 +1,1772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		013DED22064429D58C845E2F9DDD9C5B /* SKYRecordID.h in Headers */ = {isa = PBXBuildFile; fileRef = A30C2F24D76E38B74A94AF5F4B3E6640 /* SKYRecordID.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		020B843A8570A45091FD6C7495C88B77 /* SKYFetchRecordsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2693CB0266121F0A0FD3822DD6E6C9D0 /* SKYFetchRecordsOperation.m */; };
+		0235B653B776518B85B055A4A99AC3A0 /* SKYDataSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B9B2846815316344F23E84E9A8CADC /* SKYDataSerialization.m */; };
+		029077F79167030669F93360C67E7C0B /* SKYQuery+Caching.h in Headers */ = {isa = PBXBuildFile; fileRef = 51600707D73BF866690260DC69D41B81 /* SKYQuery+Caching.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		037525F45CD21A8F15523BDB915D6903 /* SKYOperation_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 65ED44A12ECA537B772A14654EAB2F5D /* SKYOperation_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03E35390B79C00A56F858823933607D5 /* SKYRecordDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E113D7317FEC7811F1416FB99A409A6 /* SKYRecordDeserializer.m */; };
+		03F795E6A730EBB9D7A3D9B656A9EF85 /* SKYAccessControl.m in Sources */ = {isa = PBXBuildFile; fileRef = B672A7808F7058E0AA21EB5261A3AE4A /* SKYAccessControl.m */; };
+		04CD5D1075938E5E922A11BD806DFEBA /* SKYRecordStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FB69646680546DBAF938ABDBEA4028 /* SKYRecordStorage.m */; };
+		04E890849B715353A4BC3DAD08B118B2 /* SKYLocationSortDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E66588D1657A32FEFB9E138ADB06A7 /* SKYLocationSortDescriptor.m */; };
+		05425C01D71666F5F0A77DB289B0C9D7 /* SKYAccessControl_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FDBAE53C91039640543CE0B7BAAC7F2 /* SKYAccessControl_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		093BC20D2C18A930AC73FB2BC1370EF6 /* SKYRecordChange.m in Sources */ = {isa = PBXBuildFile; fileRef = CF43D1AD898CA3E7F14222AC407CE89A /* SKYRecordChange.m */; };
+		099E03278D4F3E747DF21338DFE832B6 /* SKYAccessControlEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C17D73452B3E35E395A473E51CD501 /* SKYAccessControlEntry.m */; };
+		0BDF2A5A7D54767D2EB99D1483C38B55 /* SKYAssignUserRoleOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB25E3B43DD5DE797DC3205D48EA05 /* SKYAssignUserRoleOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CC07376FBE5DA1EBE8B60798313948C /* SKYGetCurrentUserOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = B2E184AF135865FEA6CC9A697E999571 /* SKYGetCurrentUserOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D4C243BFA38580E28DAB95D26D85D1D /* SKYFetchUserRoleOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF08158474CB940E33569A4A4EEE7C6 /* SKYFetchUserRoleOperation.m */; };
+		0DFAD00136820C81FFA1B992CE83FDDF /* NSError+SKYError.h in Headers */ = {isa = PBXBuildFile; fileRef = 569A356A84BCD9A3E979F5F8576D371A /* NSError+SKYError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E0F3CCBC77F3F6392B432607589BC48 /* SKYSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = D89F369F05F551B685C51877FC93A33E /* SKYSequence.m */; };
+		0EB7F538FBBC4ABE47EC915D8ACE456C /* SKYUnregisterDeviceOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F64E34652EC03A3315DF945A56B719D3 /* SKYUnregisterDeviceOperation.m */; };
+		10AE0AF4C86ED7A829753E50DEE86B26 /* SKYRecordID.m in Sources */ = {isa = PBXBuildFile; fileRef = 9104EF2512CC3BC848DEF7D094E4B3F9 /* SKYRecordID.m */; };
+		1130EE2AF02A67C0E6494911850E365E /* SKYLogoutUserOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DD4F6A50CF10D2DBD45A555D4C20867E /* SKYLogoutUserOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13047D4B61B929CD3A294C6E52D3187C /* SKYAPSNotificationInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 14808A2CFFC34D7B9F1FFA07B6E143D5 /* SKYAPSNotificationInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16003D490E1936257F923EBA71A926F3 /* SKYUploadAssetOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5F2A353688D521D2F63A3A4E25B14 /* SKYUploadAssetOperation.m */; };
+		1A420E0E7E27C289A041DBB731746402 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F879BFAC1448AC4733B02482D8405F /* Foundation.framework */; };
+		1A43ACD0B100BC9EA113BD7F4A3D6D77 /* SKYRemoveRelationsOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C86D9C246E570D06D99A538CEAB56D5 /* SKYRemoveRelationsOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20F0FFF74C4D07393E66DE05CAE87016 /* SRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = B1A0DEA9F7DCE87B90C0DFE01ABCE9BA /* SRWebSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22554065FA07F1BFE5308A685394CB12 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FBA2E01A5DB6738DC751B607EEC4172 /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22B3BF7821F05B596CB056877C7BAD70 /* SKYRecordStorageMemoryStore_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A2699573A997AC87C0C37D963354698 /* SKYRecordStorageMemoryStore_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23FBF78950A63D3F2C3711E82FBCE271 /* SKYAddRelationsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2723535E3D1D1EA0F9515E3E4F75CA87 /* SKYAddRelationsOperation.m */; };
+		27BCF950D16BFF525EEAC005A0C3B78E /* SKYGetAssetPostRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C9B7694914DAC56046BC18522ED622 /* SKYGetAssetPostRequestOperation.m */; };
+		27C126322F1E5289EC07237784D99F29 /* SKYRecordSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3410FEAACA277ED3B129E58DA90CE316 /* SKYRecordSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27E1A48A0C973A6D6C38DF7EE6643CCF /* SKYAsset.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C479C47E3DFA692CCA842F6E4A77F6C /* SKYAsset.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		280354FD086A6958F7B1377A129A1228 /* SKYAccessControlDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = D16F73A11D93C03179EBFB3193386175 /* SKYAccessControlDeserializer.m */; };
+		28B51E63D7F02EA31A3B6F4189C1D52C /* SKYPushContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = EC8CFB9B28DAA5A1386E5FB1D0D82FF6 /* SKYPushContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29059E695DE234813401B8BCE2BA3B34 /* SKYRecordStorageFileBackedMemoryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 35838CBA1064C161671452FE612CC823 /* SKYRecordStorageFileBackedMemoryStore.m */; };
+		2978D9E102ECEB46835311BCF5F70E71 /* SKYReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 633903281684B167959286EDC5852266 /* SKYReference.m */; };
+		2A6CDF195CA2241755476703CFC0FF43 /* SKYAuthContainer+ForgotPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = 0523B78A5EB43E4C3B0E6F99ED8B33CF /* SKYAuthContainer+ForgotPassword.m */; };
+		2B7148D786D2C5C13AE55E7BC977349A /* SKYNotification_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = EF873DF9E25C1D2AFDF61E84240F11D0 /* SKYNotification_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C6EA7A55835D5FBC01A9D184A3FA12D /* SKYPushContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D93B5EA7576F1796B2078F6F53104B8 /* SKYPushContainer.m */; };
+		2DE4A906373A7CC935DB60DC0ADEFE2D /* SKYAuthContainer+ForgotPassword.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E1E6F4D4D2ED368F3E5FEF8DBE2223 /* SKYAuthContainer+ForgotPassword.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E81EE6D645855321CB169F6B7698BCC /* SKYNotificationID.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DEBE45717728B82077CAFDA9FEB8685 /* SKYNotificationID.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2EAE3C87CC201B9D67FBDE8EEC5F4466 /* SKYModifySubscriptionsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FFAA13379D11A20196857C540EF380 /* SKYModifySubscriptionsOperation.m */; };
+		2F5A8B23BC191000FDCB5D5EF7E2D57A /* SKYRelation.m in Sources */ = {isa = PBXBuildFile; fileRef = B318793BC3EF1E27F1057DC7C22E3368 /* SKYRelation.m */; };
+		2F92437D4F9D30388061F12BAB973D19 /* SKYRecordSynchronizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB447D6DA8AB74352D48CCC924D1E7A /* SKYRecordSynchronizer.m */; };
+		3051D28D86F6C1C200D8030B7DCAAF3C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A93EE31574B8FE60D57E2B7092C1DB9 /* CFNetwork.framework */; };
+		3241A530E511F34641FE5D134432B6E8 /* SKYContainer_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B389D94FAF17BC34DC1D30380E201C2B /* SKYContainer_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32653AF40787E9B34DBBB160E98D212D /* SKYKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 400488BA8AFFBF4D3A16F3F956063362 /* SKYKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		342F9C9BF9346644F2588B703C05E621 /* SKYRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = ED10A917828075A39AB86603D9EBF054 /* SKYRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		360D7B80C3A3C091FF0CF8A95CF13606 /* SKYRecordSynchronizer.h in Headers */ = {isa = PBXBuildFile; fileRef = B678BC37F87DFFD0EA136CBE35965EF8 /* SKYRecordSynchronizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		371A5DDA257888BD17F0C179378CD895 /* SKYDefineDefaultAccessOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = A76CCDA25006D2738293C4B62005B3EA /* SKYDefineDefaultAccessOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37F097E2269EF1BD238AD7449D796445 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC197BA218FF2D248902AFCAE3CC2D5 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		393509DC21D37545CB4A45119F682789 /* SKYRelation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C4783CF4B4AE5E06E65F4586199A51F /* SKYRelation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3941314992A7A28EF36DAC691156AA30 /* SKYKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AC96C4E09E0EA435A0A0BAA98DD5147 /* SKYKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C083367FFE527761AB3DB8AC3369191 /* SKYResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F953C3B66928CDC6A5827E682B03F93 /* SKYResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C500618A67F0A1198469B97CF5000E2 /* SKYUnknownValue.m in Sources */ = {isa = PBXBuildFile; fileRef = A024A6D8F42CFB105D2E85B7F229B24D /* SKYUnknownValue.m */; };
+		3DE74AAF1562249CB10594176A174D14 /* SKYGetAssetPostRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 52526F4F13E8AE4BD4573541FC53FCC2 /* SKYGetAssetPostRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E43906B70EB01C06F3AE17008B853B9 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A1F9EF5BED718C148AB1914BB302CDF /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40EF8F269C0134B5E2952D344A1A9BF3 /* SKYRecord_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 80C8C7478F111EE3C02C5178BFBD1996 /* SKYRecord_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		411E9971628BBF893792B954CFB88B0D /* SKYLoginUserOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 23DE0DCD0F64C3CA748E6B079D292585 /* SKYLoginUserOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		414673D8818AD222F9B335B5FC32D7D5 /* NSURLRequest+SKYRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8472268CDD64C92416ECB73D2DF9B39E /* NSURLRequest+SKYRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		414C22ED06DC97D70F8F116620CD4135 /* SKYRegisterDeviceOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F472BCB8089C513C19F356827CBDEA7 /* SKYRegisterDeviceOperation.m */; };
+		4292442CD44B41CB7DB380D6298D384F /* SKYRevokeUserRoleOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 162DA8DE49E8A6D818650332E079CB17 /* SKYRevokeUserRoleOperation.m */; };
+		43F2E96DAD503CEBD6D1D4BF9CD64DD6 /* SKYGetCurrentUserOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FB69ABDE68CCF97D5BAF27C309532F /* SKYGetCurrentUserOperation.m */; };
+		455A0511A8209AA0E631FA4849579FDA /* SKYPubsubContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DC57DF0BE205358E4A5EF6530AFAA32 /* SKYPubsubContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45CFDBB0FF65E7DAF22E8B7D4B9F15C1 /* SKYDownloadAssetOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C276257D9DF12FCC556A55BA61014A /* SKYDownloadAssetOperation.m */; };
+		486D8B41D24F361BD329CAA92CAF73E4 /* SKYPushContainer_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B7CE66185D3DE7DC399CACC219E2415C /* SKYPushContainer_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48B513DBE66D921C1860C1DFC2E4601D /* SKYRecordSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = F8691A29F376F98B1AA98BDAF7C7DC63 /* SKYRecordSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B8D50D3987C8B9777BB5B2172893565 /* SKYRecordStorageCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = B88707D1926ABD3969CAEC7D6C2F030C /* SKYRecordStorageCoordinator.m */; };
+		4D18A07CB1E3B3E9E9E4E803DB168522 /* SKYDeleteRecordsOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = CEE98C2CDF0F34A6589E9C9045D5B538 /* SKYDeleteRecordsOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DC52D95029ABE79429251450E952D48 /* SKYDatabaseOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = D6E83A8283B4188083F99F6BC6F8F7DB /* SKYDatabaseOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50A90D50FAFA19C637701B65E8D1B19D /* SKYAuthContainer_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDE267627D72586080146E3A0E3B784 /* SKYAuthContainer_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		513EA51A2839FA2A0995D1C7CABF6936 /* SKYDefineAdminRolesOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A30638FE4179FEBC75A5EED3E885C8 /* SKYDefineAdminRolesOperation.m */; };
+		51EC3BF650B160D033C0F22EFDDD6385 /* SKYPubsubContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B2D01193DC098D150FA75CDCA2D517 /* SKYPubsubContainer.m */; };
+		528DD23D84FF0FF0CCED5AC2D829DECA /* SKYDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 927A9154D2F3DF4EBAEBC5C061BD71DD /* SKYDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5608351A3B59B920510A2E9261B7657D /* SKYPublicDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = EE518ADF9A0FBCCDBDF18C52D3D74C17 /* SKYPublicDatabase.m */; };
+		5861CB58447D2735C0B8C2DE10E4A1C2 /* SKYOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 44EAB042D17428CDA32A6E7E3C024F3B /* SKYOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58FA3946F69836F8181DCDC4B48D3E08 /* SKYRecordSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2080305BA7675319D7D00CBBD0DF3C2B /* SKYRecordSerializer.m */; };
+		59CAC22D81434AA7B6F5864B9710AD27 /* SKYSubscription.h in Headers */ = {isa = PBXBuildFile; fileRef = 394E5A6424A04E485DB37AD662ADECF3 /* SKYSubscription.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A80E5F5684F066BF8D3445931C8A104 /* SKYSignupUserOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA979E45797B54D2DC5F662FE8D8A54 /* SKYSignupUserOperation.m */; };
+		5BE79824C1396267CD65F8351129DC5B /* SKYAuthContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = BB9EB105423F7D0BC1F3A5420B937BA4 /* SKYAuthContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C4B2459067C7D2A1E3DC70CABB9B617 /* SKYQuerySerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = D3E4FDCD20058545697DB2415AEB4BCD /* SKYQuerySerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D2561899E34A6E17A838A64865E68C5 /* SKYOperationSubclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 770BCEEDE11ED061BAD7E620183E5175 /* SKYOperationSubclass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EA0891F0ADB53FD14D458AA5F5837A0 /* SKYSubscriptionDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B0BC37A4A24AACC156C281823DA070A /* SKYSubscriptionDeserializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62E65E7C1AEDA13E224D33BBDDC900C8 /* SKYLocationSortDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = DD3A6A3F69C705E8E8EF84D9969B22B1 /* SKYLocationSortDescriptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63F176FC0FDF98A6F069B4E0254D7B09 /* SKYNotificationInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D194DFD68E2621DAD96C6D685EFD41F /* SKYNotificationInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		648C583352AF37CBB3A7C5BDB946F97A /* SKYResultArrayResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 1976EC80DC7963BB07DE07ED500A1D36 /* SKYResultArrayResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		676100CF4C1D4A80957F15DEBEDCAB4C /* SKYLogoutUserOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 131F7E4BA0D11E36BC0429C029F01A96 /* SKYLogoutUserOperation.m */; };
+		698577554DC2FB0B6207D869A6CA2771 /* SKYFetchSubscriptionsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1693863AE9B2E217A005419EB65FE75B /* SKYFetchSubscriptionsOperation.m */; };
+		6B08D4668EBF0D321ACD2175E3B9C9E9 /* SKYDefineAdminRolesOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4556E9A69D330FEF807FC4B2AAE1E481 /* SKYDefineAdminRolesOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B17E282B5850BB21C18F35E5C9288DE /* SKYQueryCursor.h in Headers */ = {isa = PBXBuildFile; fileRef = 506D7CF09C92E2176890FFFB30806FE7 /* SKYQueryCursor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CFF004E26ACC3DCF663A755B2E4F5F1 /* SKYDeleteSubscriptionsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D20A917A077F1926308DBE939CB418 /* SKYDeleteSubscriptionsOperation.m */; };
+		6D322EAB32BB302883185B7D7EA80B72 /* SKYQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = ACC963C85BDBB3C61194ADD41D9CC284 /* SKYQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DF840C932F6B214CD60B7A5A5CB2F45 /* SKYRecordChange.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CAA8F4DFF7E4543295377D7A69A6D93 /* SKYRecordChange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7225CA1F130C5767CC44DA6CDD920E8C /* SKYRevokeUserRoleOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 7031387F6DB5593ED3E981819982C6D5 /* SKYRevokeUserRoleOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72563ADE99DC9E753B27D48B16AA3654 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F879BFAC1448AC4733B02482D8405F /* Foundation.framework */; };
+		76F9DFE5036589B7F3D067081D1515BA /* SKYSendPushNotificationOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 712E2ABBD2208C9FD8C6389D98487DBD /* SKYSendPushNotificationOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77E57EBD38CF73FF6E7E3EF83C79315D /* SKYAccessControlDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A57C0DA4DA1B523B283DBB49D41AB57 /* SKYAccessControlDeserializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78AD1977A9DAADDEC6FEA6C92E67B3D9 /* SKYRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = BD8EF585B6B1C715945582E00D922E41 /* SKYRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79C6147A951661F535CD843D7468DF3D /* SKYRecordStorage_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = EFE188E3563BD777AB03F02B77A851FE /* SKYRecordStorage_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B30B5D0418B1CBDFDAB89D9F0342C35 /* SKYSetUserDefaultRoleOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E313C252ECB8A7BC1F934E41286B95 /* SKYSetUserDefaultRoleOperation.m */; };
+		7C3F3A40E65481D192E8304E83B5B41E /* SKYAccessControlSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6337130DE796C5D455246726265EDCD7 /* SKYAccessControlSerializer.m */; };
+		7C9CA0DC8BE48534155EED32E51D70B4 /* Pods-photo-app-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E2D8662C4C895543449BF726AA52EF /* Pods-photo-app-dummy.m */; };
+		7E14DE89EBAA8E72C89300C8330C3CDA /* SKYModifySubscriptionsOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3710A43F6191EC204FAC0746F834855D /* SKYModifySubscriptionsOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EFC52ECC451650B846A250DBB6C8FBB /* Pods-photo-app-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03B1E4C9585443D58F94BBA1AD0B2C5F /* Pods-photo-app-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FF5349DFE126647CC9905AF980ACB2F /* SKYAccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CABE8356ED5DADF14F8AE21BB19749 /* SKYAccessToken.m */; };
+		808C52193889139316D8368DC8ECED4F /* SKYSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = DCAE1C67DB9EC681D31451A91BAC6D61 /* SKYSequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80AABBAF5DB1A706634C88A7AB2E1FC6 /* NSError+SKYError.m in Sources */ = {isa = PBXBuildFile; fileRef = A940499F7B603D633F7A3C2AF539BE98 /* NSError+SKYError.m */; };
+		82FF308FBAF2CDB96B35096A788FC049 /* SKYSubscriptionSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 805A9A2E15E1591748F67011C3D4BD43 /* SKYSubscriptionSerializer.m */; };
+		832A3F04B066B881A6D18919BD6745BB /* SKYRecordStorageCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = B9DAD1488FA2DBFA576A2DC423D0B34D /* SKYRecordStorageCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84DE5EFE11A279D41CEB268023821FCC /* SKYNotificationInfoSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 08FC0802707D340AE1AFCF286C17B601 /* SKYNotificationInfoSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8639F6CD6BB09A52FB00B5D1511981D1 /* SKYPostAssetOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4839E637FA33F4D429C82119581013E2 /* SKYPostAssetOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		878F3B50F609B36A3923A1742C77E074 /* SKYSendPushNotificationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E866F7011E4E308F8E63CA3646005728 /* SKYSendPushNotificationOperation.m */; };
+		87ECA447DB887426665260651B7F147E /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = BED5D83907C7B23B01F8DEDE17F54B7F /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		884CDCD50A5B9124118D188A0CBDDE1B /* SKYQuery+Caching.m in Sources */ = {isa = PBXBuildFile; fileRef = D88889F71FF6973F79653FCFAF88F855 /* SKYQuery+Caching.m */; };
+		8881FDCDAB76ED34F8A46373484A44DA /* SKYResultArrayResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3148DFA22C6F299A53C289C3E5859C10 /* SKYResultArrayResponse.m */; };
+		8AE18BCB99BA7BD7C861858EE4092604 /* SKYNotificationInfoDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = F2851059C0936FB05112CF3D0DA0B99B /* SKYNotificationInfoDeserializer.m */; };
+		8D2B5A6E02E407D95D87F4EC78BB512C /* SKYRecordSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AEC30DBE97423D4D3B5D95446D48C19 /* SKYRecordSerialization.m */; };
+		8D310EC297727286DFD040EC7997B2AD /* SKYDatabaseOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 28123DBB5A82A8811565C6631BD2BDE2 /* SKYDatabaseOperation.m */; };
+		8D940E55B574642847CCB61EC43EFA3A /* SKYNotificationID.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DE1ECBAACF8DB32C3EB6D7C921223C /* SKYNotificationID.m */; };
+		8FDBD22B36999369E9B3958BC458B8D4 /* SKYRecordStorageSqliteStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 199BDC913C1458F201284B2C5DF58604 /* SKYRecordStorageSqliteStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9205B37A206E6489EE5ECE5B2CF37272 /* SKYAccessControlSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7490DB9161605F92B5A950CE1D2C7245 /* SKYAccessControlSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		927FA361AB8948A51D6342DB23664224 /* SKYDefineCreationAccessOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = ACCAC0614EDE61B1E71DE7B156A37280 /* SKYDefineCreationAccessOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		950F1882788630DE7B6CF196F57EAF36 /* SocketRocket.h in Headers */ = {isa = PBXBuildFile; fileRef = E71EB0AD5014C92BF79822B76D07E399 /* SocketRocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		953C268433F234C2569D8F936B7F3DE8 /* SKYLoginUserOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23C5A60F013DDAC103398429B6609C /* SKYLoginUserOperation.m */; };
+		95985182DAE1BFBDAC8CAAC823B854DC /* SKYQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F91C02A2DD7F00666370CA787767B2 /* SKYQuery.m */; };
+		95C9D08726683AAAD14387D1EA34E049 /* SKYError.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF7A1FB4051ADD501351383A62216F0 /* SKYError.m */; };
+		96E70B43FC04BC99AED1BBD4FB1D7581 /* FMDB-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 855BD5220C4C95EC6855BF69C18DD34F /* FMDB-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97B743E324335B13E736EC18A8F8CB48 /* NSURLRequest+SKYRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D40E95CA168173F86690D2248BA57324 /* NSURLRequest+SKYRequest.m */; };
+		97E90C98A9180426C9A3CF44E0E843A0 /* SocketRocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 996F3415B893C6CC6D08CCC131D19997 /* SocketRocket-dummy.m */; };
+		9A0540908F881BFEE7D8D0233BB5592F /* SKYRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0B00B9BE6AFFBD685505485D1F1506 /* SKYRequest.m */; };
+		9A4DC1D5DD9DA1A3980E9BF5478C8AE0 /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D334A270892A98E0AD039BB1DA270C /* FMDB.framework */; };
+		9AB9AB2744763E8D1750099BC985F7B6 /* SKYQuerySerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC24573EEA3BF5F88828F05A4D49A7 /* SKYQuerySerializer.m */; };
+		9B281F161EA7359440B10C2D39BA7F63 /* SKYModifyRecordsOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = A66CDEB3A02B2D211C4A4A143DA84C3E /* SKYModifyRecordsOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B8D84996694C541CD3434386E0A081A /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FA684A3E0E7F0299DD5D21CD27857CE /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BABF63099E3EEE231ACA2AD73624A73 /* SKYAsset_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 129CA4AD52142EB262FC459029946305 /* SKYAsset_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BC1B30EFE0EC46EF673EDCF5B3A98A7 /* SKYQueryCache.h in Headers */ = {isa = PBXBuildFile; fileRef = CFA7B84566F71D638E748258E9ED6103 /* SKYQueryCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C11A290C9C5866A185A54F1EC04E2BB /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BC9CFCD51B2AB47C3B6A39659716945 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9DF9925559E6298204483CFC77C71131 /* SKYRelationPredicate.h in Headers */ = {isa = PBXBuildFile; fileRef = BE3208E5FEC82B4704AC2203615FD8F3 /* SKYRelationPredicate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F2984A3162B462147358BB9A1870E36 /* SKYSubscriptionDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 92319FFB8F9752A49CB247DAFF7F7F86 /* SKYSubscriptionDeserializer.m */; };
+		A07486FCDF6258A7031F3E5A23BD14DF /* SKYSignupUserOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = A5AC062C388445E3843E8F12925FECC0 /* SKYSignupUserOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1B5D80A8998311B8C9043E6942925E6 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5542A1119EF897614FA31965F4C3F7 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A3880D9FF2C23FB07898E2B35E12B8CF /* SKYDefineCreationAccessOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CCF3D27821184B1678F283B374988E /* SKYDefineCreationAccessOperation.m */; };
+		A4C3ADD82E02973261BD2C4574D1D25F /* SKYQueryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1A3F87E404EF62BE804639927CF366 /* SKYQueryCache.m */; };
+		A548833BE5FAD40830428F36E77D0F52 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AE21CE0B1BF8549B6C03DB1772D9528 /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A584B6719175112BC0C59B0EA835A481 /* SKYPubsubClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 72546A519900CF17C0BE6970CBD193FD /* SKYPubsubClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A66DBE3BF649536444764A1D254D5DBB /* SKYDataSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = B80186ECE85914968D18F99193C33E7C /* SKYDataSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6730587610701205B2CFA076B648916 /* SKYDeleteSubscriptionsOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 15DD3CF49F4098ABFBDB94AE2BE2F8A4 /* SKYDeleteSubscriptionsOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7B5A45DA1570FA741757247CE88DAB2 /* SKYRelationPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D896D48921F3DB03446612B4A91425A /* SKYRelationPredicate.m */; };
+		A8178961D8AF148B3C21C9FAF71B0F29 /* SKYRole.h in Headers */ = {isa = PBXBuildFile; fileRef = CB1654040958B176DC00CD2915012B55 /* SKYRole.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8A0DBAFBC87D7797E5EF0C2AFC01141 /* SKYRecordStorageSqliteStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B07EFD19D29F2F0D52243E959C03C3 /* SKYRecordStorageSqliteStore.m */; };
+		A94544C8708F33BD6B8C28A67462E7F0 /* SKYContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 08370E416E476D5BD9FDF59072351439 /* SKYContainer.m */; };
+		AA7BA378CBA999DD66B3A18A38B3E347 /* SKYKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3B7E809198DC8C9AD324618E971E84 /* SKYKit-dummy.m */; };
+		AAB2B626C09EC878DE06025BA311E2BE /* SKYQueryDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E30F4FA0EDE771A6C76E17D72FFEB2B /* SKYQueryDeserializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB55BC42C58FC5780A15361D971E61AB /* SKYDeleteRecordsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F3042580FD9866378859B961144496 /* SKYDeleteRecordsOperation.m */; };
+		AC479C535529D6DBF97BCC8BD04A5DCA /* SKYUnknownValue.h in Headers */ = {isa = PBXBuildFile; fileRef = DF2EDABC1C97C91B76585BACDF68B38E /* SKYUnknownValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AED43BDE215D535DCBFBFA98229D7653 /* SKYSubscription.m in Sources */ = {isa = PBXBuildFile; fileRef = 39789A00BD1311FD5A121798A64FFDC9 /* SKYSubscription.m */; };
+		AF1BD37963226B6B8766714399064FFD /* SKYPublicDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 07ABB89766F7D20CD71C2E7D839E8D09 /* SKYPublicDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B235BB542689E54087B9E07A767316A7 /* SKYErrorCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 40FAEACE46018EB46E11E3C020568260 /* SKYErrorCreator.m */; };
+		B32917D730E65936F073FF0B3021EA96 /* SKYError.h in Headers */ = {isa = PBXBuildFile; fileRef = 465F9F7DE174C4A67FC77E06BFE8A476 /* SKYError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3CD3C4D52791C857E2001868724EA3C /* SKYAPSNotificationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A1D8D8794EB63F9EE7319C19557BC /* SKYAPSNotificationInfo.m */; };
+		B412319E084EC63038B5C22DB97B4934 /* SKYQueryCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A38A814FB469348F747B9267B8E6B78 /* SKYQueryCursor.m */; };
+		B4255B4A345CD1C6642793A9C6EB8EE0 /* SKYRecordDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = F57E07E1388055A0E52F991754721086 /* SKYRecordDeserializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B461478A16E07F991866E33FBF064B86 /* SKYNotificationInfoSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E04FD8787A8F6CCD1A573C5C8A358F9 /* SKYNotificationInfoSerializer.m */; };
+		B6817A965BA1F9580145BCD837DBB786 /* SKYSubscriptionSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 99D8A4DB7952C5E5ECC9F32DED5C67F5 /* SKYSubscriptionSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B688958B49F95EE7C019F6664B7379AD /* SKYQueryOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AAE6B40769A26D1FF56DBC4AD18038 /* SKYQueryOperation.m */; };
+		B7D8608A055A674EBBD4E8A02B171D80 /* SKYAccessControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 1717081AB677691F03262C1D8B5B6092 /* SKYAccessControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B97FFB790C9BA16077CC6275C808F82F /* SKYDownloadAssetOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = EF4BE2ED4095495662ED5A02BB63792E /* SKYDownloadAssetOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC1C6E4CA3F36F936B36CB408BC7939A /* SocketRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E89489F0386A43DB5429E636011EAAF /* SocketRocket.framework */; };
+		BCE05B513D5A5CA60173A48DE21DF101 /* SKYRecordStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 15B9ACA29BC56424ECF11A74BE6C867A /* SKYRecordStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCEB2C5202A3F299449DC14E61EFEAD6 /* SKYAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B77C29DECD05904CF658D1F4E361DD /* SKYAsset.m */; };
+		BD5364C8F8C9C08688515897DCB476F6 /* SKYRecordStorageMemoryStore.h in Headers */ = {isa = PBXBuildFile; fileRef = DC02D282942CE077BD08449F204BB9C1 /* SKYRecordStorageMemoryStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD6EE60946F7162F9795EB38BF3403BC /* SKYNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFEA57073FF7AC86C8B9B8DE2CBF406 /* SKYNotification.m */; };
+		BE56B71816166E3810F928E3449DAB6F /* SKYLambdaOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = BF9303C0466CA02EDFB64D86B750B73B /* SKYLambdaOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BECB71238F21F9B95E552D490672D6ED /* SKYGCMNotificationInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA2BA05B8FC6EF3153B276EF6C24A7C /* SKYGCMNotificationInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFC46FB3913D536B5838D51BDA668717 /* SKYQueryDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F670E6C62A9898A3788022C827FC86 /* SKYQueryDeserializer.m */; };
+		C019D6676F291E2A903D49C24164A089 /* SKYPubsubContainer_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C62F317CDD5756198709A3F05987EED /* SKYPubsubContainer_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C05767AE455D7A9C747A54490FA2E6F3 /* SKYReference.h in Headers */ = {isa = PBXBuildFile; fileRef = 3345AEADBB908DF1495DC798B8A15155 /* SKYReference.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3809054A7E2884A87749C9A43333B33 /* SKYUploadAssetOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A17F0AEDCC13ED37742AF566653FD8E /* SKYUploadAssetOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4869730DC555377F13F905A9C2E6F11 /* SKYRecordStorageFileBackedMemoryStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE0A641217282A5E846E4896412C422 /* SKYRecordStorageFileBackedMemoryStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5C7CC2F67E2F1E879969EED9573BB55 /* SKYSubscriptionSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A770092183148EDA44BF8FAB476562 /* SKYSubscriptionSerialization.m */; };
+		C605A44DF96E7FCACF7D6E37B62F795D /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 235179821D017FD153D8B07976F3D819 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C68378FC69B23973950099A66BB5DD12 /* SKYPostAssetOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF76E0F4E8524B31CDD9621CFF4CEEB /* SKYPostAssetOperation.m */; };
+		C858322BA49A84791D9C015B1716EFEA /* SKYRecordStorageBackingStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F17BCD437ABE6C8CD827F57C73A283 /* SKYRecordStorageBackingStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C864A85C4CD1589F715BA3E6ADF58723 /* SKYOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BF852AD16EDF1E59434CD9415EEC06DD /* SKYOperation.m */; };
+		C91CE57C2627479CD0DB6BD7E3BEE58A /* SKYResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC53711130034AE75D0FA147B433EB /* SKYResponse.m */; };
+		CCB74062CE0F4B8E5B7483599BC398DA /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = E145674967FDB21B87956E7CEF979E4D /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1B7374017AEAF829CD6F89A4F30D133 /* SKYDefineDefaultAccessOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD92404F403669F2B1B3C97A2C4F615 /* SKYDefineDefaultAccessOperation.m */; };
+		D2135119B514DAEB4C6777565FF5612B /* SocketRocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF1B5D2715FC1A2A3181B7E977545803 /* SocketRocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4423ED11C5AB21146508D779E508627 /* SKYRegisterDeviceOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4567467E70EB6F9CCCEC4EE779BCDDF9 /* SKYRegisterDeviceOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5262D7783A87D44D72C2A0289E5083F /* SKYSubscriptionSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 3978E08794E86B3300C6DFB282AB4F4E /* SKYSubscriptionSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5991941DC41DDDDDACAE0B5D47A4639 /* FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09635E3EF852A93117EBB7960A2DA3EB /* FMDB-dummy.m */; };
+		D705B1648B4F6924D13ACA70620315BF /* SKYAssignUserRoleOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDFFE16A0D718AC5BE47D16573D7F3F /* SKYAssignUserRoleOperation.m */; };
+		D71A62D4006B321853AC8521BC9E7CAA /* SKYNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 2635042A120798EF0D9CD45DB49126D1 /* SKYNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D75B0ADB8A9F09418FAB4C17562634C2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D89654FDC663E3A3312E95D4B36692 /* Security.framework */; };
+		D9611B3BBCC486BF275F87B89DAD4A76 /* SKYRole.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2A4A3050BFC277BB90015825C5A7A0 /* SKYRole.m */; };
+		D9774213451EE1CABFBC030108624B13 /* SKYAddRelationsOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 356EDB66FCA1FF2B91017320CDA1D614 /* SKYAddRelationsOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DABC9EC39617D9F3E6459E3258710F3A /* SKYNotificationInfoDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2290E1500DF4504047D42488880E1607 /* SKYNotificationInfoDeserializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE4A0549AEB22D455CCB447F99CE69B1 /* SKYErrorCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F01EEDCF7046091D889148D45A11BB0 /* SKYErrorCreator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E133A7E84B8C5C1BEB701F07056DA143 /* SKYChangePasswordOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D17696300B7784CCB6399FBAE4A0C2 /* SKYChangePasswordOperation.m */; };
+		E3477E2501691F19820806C9922EFFF5 /* SKYAuthContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDACABF3BAB76EBDC48F2CEAE4EB7FE /* SKYAuthContainer.m */; };
+		E3CF02BC681A2EA34E2CF3890D43D22C /* SKYQueryOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = C927E2415031B35DCD5AF166673C64E1 /* SKYQueryOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E587168FFDF602B68982A55F9687250F /* SKYRecordChange_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = E28B05ED7A9ABB29864154D0DE002A11 /* SKYRecordChange_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5F4D06359B9365EFFB8CD20204F96F2 /* SKYFetchSubscriptionsOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 09838B98BD93E456BE86C67768865AF3 /* SKYFetchSubscriptionsOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8158CDF02AC9C46927EB7B469653C82 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7AE453ADB4E2C882370DB27A3056B3 /* SRWebSocket.m */; };
+		E84455200DEB468911E15D3E31A5A148 /* SKYModifyRecordsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEE1E0B5E9A7C4A27B89CE7BCE4DBEB /* SKYModifyRecordsOperation.m */; };
+		E873DA368BCE24C175F9F941CB4C585F /* SKYDatabase_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A4AE50126ABD254882850D60CA9193D3 /* SKYDatabase_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E96D4A31417DAED6BBE700924F7FFC08 /* SKYLambdaOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A8CD7B6A23C0E5AD3F35F49089CC9 /* SKYLambdaOperation.m */; };
+		EB5E90632696F7CF497ACD375582BDB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F879BFAC1448AC4733B02482D8405F /* Foundation.framework */; };
+		EBC3E4511D1EA1334E6480A8EA28F4F2 /* SKYDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D32FE031BADEE0A2BA193EA39300FAE /* SKYDatabase.m */; };
+		EDC30447488253C0CDB7458D3AD040FD /* SKYAccessControlEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = FB4B8ED991AD65350B977769BDDE60A5 /* SKYAccessControlEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE95F11821187C83DA4890906B68EBF1 /* SKYRemoveRelationsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF15E568D4C43E755DEEF6657CBAC8E /* SKYRemoveRelationsOperation.m */; };
+		EEC061C8EE8F8CEAEA997F6747A556A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F879BFAC1448AC4733B02482D8405F /* Foundation.framework */; };
+		F04466702BE08D5BE2E0C3072B569754 /* SKYContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 01FA1EC4B411C065E3E58F8E7D92801A /* SKYContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F11FAB91014130EE233A3429439D38D7 /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = A03CD3363102C257DC7F5BED79BC285C /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2AFEF3128051EA00DD6F95BA62665A9 /* SKYRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F295303C8663F27FA0928A12A249282 /* SKYRecord.m */; };
+		F305A3D091C1CB201F490123914DD89D /* SKYAccessToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C68F5A23CB8737D04CECE098ACF688A /* SKYAccessToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F33D600B490EA9757280CF3EDEE96453 /* SKYFetchRecordsOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B444B7EBF859EA6EA4ABA6F461B6081 /* SKYFetchRecordsOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3DDF29EF1A10A6A2B3E66DA93455ADC /* SKYFetchUserRoleOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8326AFC37EC718FB5ECA07CE7596C0F3 /* SKYFetchUserRoleOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9506810026E3CC76C9AF34344F2CD84 /* SKYChangePasswordOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 469764D5E903C85B7A9865EACB5F8427 /* SKYChangePasswordOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA61FFB2260E4E3973450E15826F1458 /* SKYSetUserDefaultRoleOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 73505226E63FB5F7E4A527AB09833085 /* SKYSetUserDefaultRoleOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAB7EF364C9892FB359E4099CADA4B8A /* SKYUnregisterDeviceOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = D51A31A4BDAE221C82EB070B2BF50958 /* SKYUnregisterDeviceOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC38E5A010D7A312C268198A8AEC73BD /* SKYPubsubClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 73869B247AA5E2A4F05AD3C5855EA14D /* SKYPubsubClient.m */; };
+		FCEAB168310F3F867329055C590EB3FB /* SKYNotificationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 67052C5957BA2AD76FBCF00E625DE0C1 /* SKYNotificationInfo.m */; };
+		FE1924853553BDB9484651F4A74548EE /* SKYGCMNotificationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F17E5C9C7B75BE66C41CF50639542B /* SKYGCMNotificationInfo.m */; };
+		FF6B29B567CE2522091541995F429064 /* SKYRecordStorageMemoryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7DA722B91393BAB6F73B8ECE9BB25C /* SKYRecordStorageMemoryStore.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AC256885F46431EC2D2D001BA045CB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 251BAD17812F7EBF6532EACF66F941C3;
+			remoteInfo = FMDB;
+		};
+		3F251DB3C89CE6F1CDEBC26A6F47A4FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97824112F85DEC024351A7BB3E8AF846;
+			remoteInfo = SocketRocket;
+		};
+		9154D927D89390FBA81B6BC074744B69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 251BAD17812F7EBF6532EACF66F941C3;
+			remoteInfo = FMDB;
+		};
+		A3367EA037E890E01B9916B1430C6F04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80A24F12ED9CD6238F75537A151D9645;
+			remoteInfo = SKYKit;
+		};
+		DFE75176EA6C81CADD52F66253837136 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97824112F85DEC024351A7BB3E8AF846;
+			remoteInfo = SocketRocket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00FB69ABDE68CCF97D5BAF27C309532F /* SKYGetCurrentUserOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYGetCurrentUserOperation.m; path = Pod/Classes/SKYGetCurrentUserOperation.m; sourceTree = "<group>"; };
+		01FA1EC4B411C065E3E58F8E7D92801A /* SKYContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYContainer.h; path = Pod/Classes/SKYContainer.h; sourceTree = "<group>"; };
+		03B1E4C9585443D58F94BBA1AD0B2C5F /* Pods-photo-app-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-photo-app-umbrella.h"; sourceTree = "<group>"; };
+		0523B78A5EB43E4C3B0E6F99ED8B33CF /* SKYAuthContainer+ForgotPassword.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SKYAuthContainer+ForgotPassword.m"; path = "Pod/Extensions/Forgot Password/SKYAuthContainer+ForgotPassword.m"; sourceTree = "<group>"; };
+		07ABB89766F7D20CD71C2E7D839E8D09 /* SKYPublicDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYPublicDatabase.h; path = Pod/Classes/SKYPublicDatabase.h; sourceTree = "<group>"; };
+		08370E416E476D5BD9FDF59072351439 /* SKYContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYContainer.m; path = Pod/Classes/SKYContainer.m; sourceTree = "<group>"; };
+		08FC0802707D340AE1AFCF286C17B601 /* SKYNotificationInfoSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYNotificationInfoSerializer.h; path = Pod/Classes/SKYNotificationInfoSerializer.h; sourceTree = "<group>"; };
+		09635E3EF852A93117EBB7960A2DA3EB /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
+		09838B98BD93E456BE86C67768865AF3 /* SKYFetchSubscriptionsOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYFetchSubscriptionsOperation.h; path = Pod/Classes/SKYFetchSubscriptionsOperation.h; sourceTree = "<group>"; };
+		0B444B7EBF859EA6EA4ABA6F461B6081 /* SKYFetchRecordsOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYFetchRecordsOperation.h; path = Pod/Classes/SKYFetchRecordsOperation.h; sourceTree = "<group>"; };
+		0BC9CFCD51B2AB47C3B6A39659716945 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		0C86D9C246E570D06D99A538CEAB56D5 /* SKYRemoveRelationsOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYRemoveRelationsOperation.h; path = Pod/Classes/SKYRemoveRelationsOperation.h; sourceTree = "<group>"; };
+		0CF7A1FB4051ADD501351383A62216F0 /* SKYError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYError.m; path = Pod/Classes/SKYError.m; sourceTree = "<group>"; };
+		0D194DFD68E2621DAD96C6D685EFD41F /* SKYNotificationInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYNotificationInfo.h; path = Pod/Classes/SKYNotificationInfo.h; sourceTree = "<group>"; };
+		0D896D48921F3DB03446612B4A91425A /* SKYRelationPredicate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYRelationPredicate.m; path = Pod/Classes/SKYRelationPredicate.m; sourceTree = "<group>"; };
+		1182E6830882584DD8E2E91E87489165 /* Pods-photo-app.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-photo-app.modulemap"; sourceTree = "<group>"; };
+		11D89654FDC663E3A3312E95D4B36692 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		129CA4AD52142EB262FC459029946305 /* SKYAsset_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYAsset_Private.h; path = Pod/Classes/SKYAsset_Private.h; sourceTree = "<group>"; };
+		131F7E4BA0D11E36BC0429C029F01A96 /* SKYLogoutUserOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYLogoutUserOperation.m; path = Pod/Classes/SKYLogoutUserOperation.m; sourceTree = "<group>"; };
+		14808A2CFFC34D7B9F1FFA07B6E143D5 /* SKYAPSNotificationInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYAPSNotificationInfo.h; path = Pod/Classes/SKYAPSNotificationInfo.h; sourceTree = "<group>"; };
+		15B9ACA29BC56424ECF11A74BE6C867A /* SKYRecordStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYRecordStorage.h; path = Pod/Classes/SKYRecordStorage.h; sourceTree = "<group>"; };
+		15DD3CF49F4098ABFBDB94AE2BE2F8A4 /* SKYDeleteSubscriptionsOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYDeleteSubscriptionsOperation.h; path = Pod/Classes/SKYDeleteSubscriptionsOperation.h; sourceTree = "<group>"; };
+		162DA8DE49E8A6D818650332E079CB17 /* SKYRevokeUserRoleOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYRevokeUserRoleOperation.m; path = Pod/Classes/SKYRevokeUserRoleOperation.m; sourceTree = "<group>"; };
+		1693863AE9B2E217A005419EB65FE75B /* SKYFetchSubscriptionsOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYFetchSubscriptionsOperation.m; path = Pod/Classes/SKYFetchSubscriptionsOperation.m; sourceTree = "<group>"; };
+		1717081AB677691F03262C1D8B5B6092 /* SKYAccessControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYAccessControl.h; path = Pod/Classes/SKYAccessControl.h; sourceTree = "<group>"; };
+		1976EC80DC7963BB07DE07ED500A1D36 /* SKYResultArrayResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYResultArrayResponse.h; path = Pod/Classes/SKYResultArrayResponse.h; sourceTree = "<group>"; };
+		199BDC913C1458F201284B2C5DF58604 /* SKYRecordStorageSqliteStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYRecordStorageSqliteStore.h; path = Pod/Classes/SKYRecordStorageSqliteStore.h; sourceTree = "<group>"; };
+		1A1F9EF5BED718C148AB1914BB302CDF /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
+		1E04FD8787A8F6CCD1A573C5C8A358F9 /* SKYNotificationInfoSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYNotificationInfoSerializer.m; path = Pod/Classes/SKYNotificationInfoSerializer.m; sourceTree = "<group>"; };
+		1E89489F0386A43DB5429E636011EAAF /* SocketRocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SocketRocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2080305BA7675319D7D00CBBD0DF3C2B /* SKYRecordSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYRecordSerializer.m; path = Pod/Classes/SKYRecordSerializer.m; sourceTree = "<group>"; };
+		21DE1ECBAACF8DB32C3EB6D7C921223C /* SKYNotificationID.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYNotificationID.m; path = Pod/Classes/SKYNotificationID.m; sourceTree = "<group>"; };
+		2290E1500DF4504047D42488880E1607 /* SKYNotificationInfoDeserializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYNotificationInfoDeserializer.h; path = Pod/Classes/SKYNotificationInfoDeserializer.h; sourceTree = "<group>"; };
+		235179821D017FD153D8B07976F3D819 /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
+		23DE0DCD0F64C3CA748E6B079D292585 /* SKYLoginUserOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYLoginUserOperation.h; path = Pod/Classes/SKYLoginUserOperation.h; sourceTree = "<group>"; };
+		23F17BCD437ABE6C8CD827F57C73A283 /* SKYRecordStorageBackingStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYRecordStorageBackingStore.h; path = Pod/Classes/SKYRecordStorageBackingStore.h; sourceTree = "<group>"; };
+		26092BE2CB393BE936F2D4930A4C1A5E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2635042A120798EF0D9CD45DB49126D1 /* SKYNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYNotification.h; path = Pod/Classes/SKYNotification.h; sourceTree = "<group>"; };
+		2693CB0266121F0A0FD3822DD6E6C9D0 /* SKYFetchRecordsOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYFetchRecordsOperation.m; path = Pod/Classes/SKYFetchRecordsOperation.m; sourceTree = "<group>"; };
+		2723535E3D1D1EA0F9515E3E4F75CA87 /* SKYAddRelationsOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYAddRelationsOperation.m; path = Pod/Classes/SKYAddRelationsOperation.m; sourceTree = "<group>"; };
+		28123DBB5A82A8811565C6631BD2BDE2 /* SKYDatabaseOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYDatabaseOperation.m; path = Pod/Classes/SKYDatabaseOperation.m; sourceTree = "<group>"; };
+		2A2A4A3050BFC277BB90015825C5A7A0 /* SKYRole.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYRole.m; path = Pod/Classes/SKYRole.m; sourceTree = "<group>"; };
+		2A38A814FB469348F747B9267B8E6B78 /* SKYQueryCursor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYQueryCursor.m; path = Pod/Classes/SKYQueryCursor.m; sourceTree = "<group>"; };
+		2D7DA722B91393BAB6F73B8ECE9BB25C /* SKYRecordStorageMemoryStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYRecordStorageMemoryStore.m; path = Pod/Classes/SKYRecordStorageMemoryStore.m; sourceTree = "<group>"; };
+		2DEBE45717728B82077CAFDA9FEB8685 /* SKYNotificationID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYNotificationID.h; path = Pod/Classes/SKYNotificationID.h; sourceTree = "<group>"; };
+		2F01EEDCF7046091D889148D45A11BB0 /* SKYErrorCreator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYErrorCreator.h; path = Pod/Classes/SKYErrorCreator.h; sourceTree = "<group>"; };
+		2F472BCB8089C513C19F356827CBDEA7 /* SKYRegisterDeviceOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYRegisterDeviceOperation.m; path = Pod/Classes/SKYRegisterDeviceOperation.m; sourceTree = "<group>"; };
+		3050121FB6E3A579C1097A187E6C46BC /* SocketRocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SocketRocket.framework; path = SocketRocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3148DFA22C6F299A53C289C3E5859C10 /* SKYResultArrayResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYResultArrayResponse.m; path = Pod/Classes/SKYResultArrayResponse.m; sourceTree = "<group>"; };
+		3345AEADBB908DF1495DC798B8A15155 /* SKYReference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYReference.h; path = Pod/Classes/SKYReference.h; sourceTree = "<group>"; };
+		3410FEAACA277ED3B129E58DA90CE316 /* SKYRecordSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYRecordSerializer.h; path = Pod/Classes/SKYRecordSerializer.h; sourceTree = "<group>"; };
+		356EDB66FCA1FF2B91017320CDA1D614 /* SKYAddRelationsOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYAddRelationsOperation.h; path = Pod/Classes/SKYAddRelationsOperation.h; sourceTree = "<group>"; };
+		35838CBA1064C161671452FE612CC823 /* SKYRecordStorageFileBackedMemoryStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYRecordStorageFileBackedMemoryStore.m; path = Pod/Classes/SKYRecordStorageFileBackedMemoryStore.m; sourceTree = "<group>"; };
+		3710A43F6191EC204FAC0746F834855D /* SKYModifySubscriptionsOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYModifySubscriptionsOperation.h; path = Pod/Classes/SKYModifySubscriptionsOperation.h; sourceTree = "<group>"; };
+		394E5A6424A04E485DB37AD662ADECF3 /* SKYSubscription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYSubscription.h; path = Pod/Classes/SKYSubscription.h; sourceTree = "<group>"; };
+		39789A00BD1311FD5A121798A64FFDC9 /* SKYSubscription.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYSubscription.m; path = Pod/Classes/SKYSubscription.m; sourceTree = "<group>"; };
+		3978E08794E86B3300C6DFB282AB4F4E /* SKYSubscriptionSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYSubscriptionSerialization.h; path = Pod/Classes/SKYSubscriptionSerialization.h; sourceTree = "<group>"; };
+		3A17F0AEDCC13ED37742AF566653FD8E /* SKYUploadAssetOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYUploadAssetOperation.h; path = Pod/Classes/SKYUploadAssetOperation.h; sourceTree = "<group>"; };
+		3BFC8D29BF10E18D9A2100A01836069F /* Pods_photo_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_photo_app.framework; path = "Pods-photo-app.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CAA8F4DFF7E4543295377D7A69A6D93 /* SKYRecordChange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYRecordChange.h; path = Pod/Classes/SKYRecordChange.h; sourceTree = "<group>"; };
+		3D93B5EA7576F1796B2078F6F53104B8 /* SKYPushContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYPushContainer.m; path = Pod/Classes/SKYPushContainer.m; sourceTree = "<group>"; };
+		3F1A1D8D8794EB63F9EE7319C19557BC /* SKYAPSNotificationInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYAPSNotificationInfo.m; path = Pod/Classes/SKYAPSNotificationInfo.m; sourceTree = "<group>"; };
+		3F250E0D4D6BECF83B13C55359CF6381 /* SKYKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SKYKit-prefix.pch"; sourceTree = "<group>"; };
+		3FA684A3E0E7F0299DD5D21CD27857CE /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
+		3FDBAE53C91039640543CE0B7BAAC7F2 /* SKYAccessControl_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYAccessControl_Private.h; path = Pod/Classes/SKYAccessControl_Private.h; sourceTree = "<group>"; };
+		400488BA8AFFBF4D3A16F3F956063362 /* SKYKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SKYKit-umbrella.h"; sourceTree = "<group>"; };
+		40FAEACE46018EB46E11E3C020568260 /* SKYErrorCreator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYErrorCreator.m; path = Pod/Classes/SKYErrorCreator.m; sourceTree = "<group>"; };
+		42923686CC55BC72E1259F1965863FAB /* FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-prefix.pch"; sourceTree = "<group>"; };
+		42D20A917A077F1926308DBE939CB418 /* SKYDeleteSubscriptionsOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYDeleteSubscriptionsOperation.m; path = Pod/Classes/SKYDeleteSubscriptionsOperation.m; sourceTree = "<group>"; };
+		44EAB042D17428CDA32A6E7E3C024F3B /* SKYOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYOperation.h; path = Pod/Classes/SKYOperation.h; sourceTree = "<group>"; };
+		4556E9A69D330FEF807FC4B2AAE1E481 /* SKYDefineAdminRolesOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYDefineAdminRolesOperation.h; path = Pod/Classes/SKYDefineAdminRolesOperation.h; sourceTree = "<group>"; };
+		4567467E70EB6F9CCCEC4EE779BCDDF9 /* SKYRegisterDeviceOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYRegisterDeviceOperation.h; path = Pod/Classes/SKYRegisterDeviceOperation.h; sourceTree = "<group>"; };
+		45A5992B578557D0A63B5B924D978047 /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FMDB.framework; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		465F9F7DE174C4A67FC77E06BFE8A476 /* SKYError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYError.h; path = Pod/Classes/SKYError.h; sourceTree = "<group>"; };
+		469764D5E903C85B7A9865EACB5F8427 /* SKYChangePasswordOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYChangePasswordOperation.h; path = Pod/Classes/SKYChangePasswordOperation.h; sourceTree = "<group>"; };
+		47C276257D9DF12FCC556A55BA61014A /* SKYDownloadAssetOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYDownloadAssetOperation.m; path = Pod/Classes/SKYDownloadAssetOperation.m; sourceTree = "<group>"; };
+		4839E637FA33F4D429C82119581013E2 /* SKYPostAssetOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYPostAssetOperation.h; path = Pod/Classes/SKYPostAssetOperation.h; sourceTree = "<group>"; };
+		48AAE6B40769A26D1FF56DBC4AD18038 /* SKYQueryOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYQueryOperation.m; path = Pod/Classes/SKYQueryOperation.m; sourceTree = "<group>"; };
+		49E512A43D0AD7B94F078D53F1B17B21 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AE0A641217282A5E846E4896412C422 /* SKYRecordStorageFileBackedMemoryStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYRecordStorageFileBackedMemoryStore.h; path = Pod/Classes/SKYRecordStorageFileBackedMemoryStore.h; sourceTree = "<group>"; };
+		4C68F5A23CB8737D04CECE098ACF688A /* SKYAccessToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYAccessToken.h; path = Pod/Classes/SKYAccessToken.h; sourceTree = "<group>"; };
+		4CF08158474CB940E33569A4A4EEE7C6 /* SKYFetchUserRoleOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYFetchUserRoleOperation.m; path = Pod/Classes/SKYFetchUserRoleOperation.m; sourceTree = "<group>"; };
+		4D6A8CD7B6A23C0E5AD3F35F49089CC9 /* SKYLambdaOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYLambdaOperation.m; path = Pod/Classes/SKYLambdaOperation.m; sourceTree = "<group>"; };
+		506D7CF09C92E2176890FFFB30806FE7 /* SKYQueryCursor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYQueryCursor.h; path = Pod/Classes/SKYQueryCursor.h; sourceTree = "<group>"; };
+		51415255940B1B5789D3AD4C9407F166 /* Pods-photo-app-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-photo-app-resources.sh"; sourceTree = "<group>"; };
+		51600707D73BF866690260DC69D41B81 /* SKYQuery+Caching.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SKYQuery+Caching.h"; path = "Pod/Classes/SKYQuery+Caching.h"; sourceTree = "<group>"; };
+		5223F36BB3E218801C390A20EA52CE35 /* SKYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SKYKit.framework; path = SKYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52526F4F13E8AE4BD4573541FC53FCC2 /* SKYGetAssetPostRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYGetAssetPostRequestOperation.h; path = Pod/Classes/SKYGetAssetPostRequestOperation.h; sourceTree = "<group>"; };
+		53A5F2A353688D521D2F63A3A4E25B14 /* SKYUploadAssetOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYUploadAssetOperation.m; path = Pod/Classes/SKYUploadAssetOperation.m; sourceTree = "<group>"; };
+		5501A14135EFCB815012BA983A66000E /* Pods-photo-app-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-photo-app-acknowledgements.plist"; sourceTree = "<group>"; };
+		569A356A84BCD9A3E979F5F8576D371A /* NSError+SKYError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSError+SKYError.h"; path = "Pod/Classes/NSError+SKYError.h"; sourceTree = "<group>"; };
+		58B2D01193DC098D150FA75CDCA2D517 /* SKYPubsubContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYPubsubContainer.m; path = Pod/Classes/SKYPubsubContainer.m; sourceTree = "<group>"; };
+		58FB69646680546DBAF938ABDBEA4028 /* SKYRecordStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYRecordStorage.m; path = Pod/Classes/SKYRecordStorage.m; sourceTree = "<group>"; };
+		59E313C252ECB8A7BC1F934E41286B95 /* SKYSetUserDefaultRoleOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYSetUserDefaultRoleOperation.m; path = Pod/Classes/SKYSetUserDefaultRoleOperation.m; sourceTree = "<group>"; };
+		59F17E5C9C7B75BE66C41CF50639542B /* SKYGCMNotificationInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYGCMNotificationInfo.m; path = Pod/Classes/SKYGCMNotificationInfo.m; sourceTree = "<group>"; };
+		5C4783CF4B4AE5E06E65F4586199A51F /* SKYRelation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYRelation.h; path = Pod/Classes/SKYRelation.h; sourceTree = "<group>"; };
+		5C479C47E3DFA692CCA842F6E4A77F6C /* SKYAsset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYAsset.h; path = Pod/Classes/SKYAsset.h; sourceTree = "<group>"; };
+		5D776A9A2BB6C315AE431293B7172980 /* SKYKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SKYKit.modulemap; sourceTree = "<group>"; };
+		5DF76E0F4E8524B31CDD9621CFF4CEEB /* SKYPostAssetOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYPostAssetOperation.m; path = Pod/Classes/SKYPostAssetOperation.m; sourceTree = "<group>"; };
+		5F4DEF4FACF11C6B131A9AF298BBDA03 /* Pods-photo-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-photo-app.release.xcconfig"; sourceTree = "<group>"; };
+		5FA979E45797B54D2DC5F662FE8D8A54 /* SKYSignupUserOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYSignupUserOperation.m; path = Pod/Classes/SKYSignupUserOperation.m; sourceTree = "<group>"; };
+		5FBA2E01A5DB6738DC751B607EEC4172 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
+		61FFAA13379D11A20196857C540EF380 /* SKYModifySubscriptionsOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYModifySubscriptionsOperation.m; path = Pod/Classes/SKYModifySubscriptionsOperation.m; sourceTree = "<group>"; };
+		6337130DE796C5D455246726265EDCD7 /* SKYAccessControlSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYAccessControlSerializer.m; path = Pod/Classes/SKYAccessControlSerializer.m; sourceTree = "<group>"; };
+		633903281684B167959286EDC5852266 /* SKYReference.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYReference.m; path = Pod/Classes/SKYReference.m; sourceTree = "<group>"; };
+		63B07EFD19D29F2F0D52243E959C03C3 /* SKYRecordStorageSqliteStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYRecordStorageSqliteStore.m; path = Pod/Classes/SKYRecordStorageSqliteStore.m; sourceTree = "<group>"; };
+		65ED44A12ECA537B772A14654EAB2F5D /* SKYOperation_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYOperation_Private.h; path = Pod/Classes/SKYOperation_Private.h; sourceTree = "<group>"; };
+		67052C5957BA2AD76FBCF00E625DE0C1 /* SKYNotificationInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYNotificationInfo.m; path = Pod/Classes/SKYNotificationInfo.m; sourceTree = "<group>"; };
+		6A2699573A997AC87C0C37D963354698 /* SKYRecordStorageMemoryStore_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYRecordStorageMemoryStore_Private.h; path = Pod/Classes/SKYRecordStorageMemoryStore_Private.h; sourceTree = "<group>"; };
+		6AD92404F403669F2B1B3C97A2C4F615 /* SKYDefineDefaultAccessOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYDefineDefaultAccessOperation.m; path = Pod/Classes/SKYDefineDefaultAccessOperation.m; sourceTree = "<group>"; };
+		6AE21CE0B1BF8549B6C03DB1772D9528 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		6AEC30DBE97423D4D3B5D95446D48C19 /* SKYRecordSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYRecordSerialization.m; path = Pod/Classes/SKYRecordSerialization.m; sourceTree = "<group>"; };
+		6C62F317CDD5756198709A3F05987EED /* SKYPubsubContainer_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYPubsubContainer_Private.h; path = Pod/Classes/SKYPubsubContainer_Private.h; sourceTree = "<group>"; };
+		6CDFFE16A0D718AC5BE47D16573D7F3F /* SKYAssignUserRoleOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYAssignUserRoleOperation.m; path = Pod/Classes/SKYAssignUserRoleOperation.m; sourceTree = "<group>"; };
+		6F3ADE04F2CD010E15609D8BFC14C72D /* Pods-photo-app-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-photo-app-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6F953C3B66928CDC6A5827E682B03F93 /* SKYResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYResponse.h; path = Pod/Classes/SKYResponse.h; sourceTree = "<group>"; };
+		6FCC24573EEA3BF5F88828F05A4D49A7 /* SKYQuerySerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYQuerySerializer.m; path = Pod/Classes/SKYQuerySerializer.m; sourceTree = "<group>"; };
+		7031387F6DB5593ED3E981819982C6D5 /* SKYRevokeUserRoleOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYRevokeUserRoleOperation.h; path = Pod/Classes/SKYRevokeUserRoleOperation.h; sourceTree = "<group>"; };
+		712E2ABBD2208C9FD8C6389D98487DBD /* SKYSendPushNotificationOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYSendPushNotificationOperation.h; path = Pod/Classes/SKYSendPushNotificationOperation.h; sourceTree = "<group>"; };
+		72546A519900CF17C0BE6970CBD193FD /* SKYPubsubClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYPubsubClient.h; path = Pod/Classes/SKYPubsubClient.h; sourceTree = "<group>"; };
+		73505226E63FB5F7E4A527AB09833085 /* SKYSetUserDefaultRoleOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYSetUserDefaultRoleOperation.h; path = Pod/Classes/SKYSetUserDefaultRoleOperation.h; sourceTree = "<group>"; };
+		73869B247AA5E2A4F05AD3C5855EA14D /* SKYPubsubClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYPubsubClient.m; path = Pod/Classes/SKYPubsubClient.m; sourceTree = "<group>"; };
+		7490DB9161605F92B5A950CE1D2C7245 /* SKYAccessControlSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYAccessControlSerializer.h; path = Pod/Classes/SKYAccessControlSerializer.h; sourceTree = "<group>"; };
+		759F96CC8665EF575A1F71545CD0A233 /* SocketRocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SocketRocket.xcconfig; sourceTree = "<group>"; };
+		770BCEEDE11ED061BAD7E620183E5175 /* SKYOperationSubclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYOperationSubclass.h; path = Pod/Classes/SKYOperationSubclass.h; sourceTree = "<group>"; };
+		79CABE8356ED5DADF14F8AE21BB19749 /* SKYAccessToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYAccessToken.m; path = Pod/Classes/SKYAccessToken.m; sourceTree = "<group>"; };
+		7AFEA57073FF7AC86C8B9B8DE2CBF406 /* SKYNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYNotification.m; path = Pod/Classes/SKYNotification.m; sourceTree = "<group>"; };
+		7B7AE453ADB4E2C882370DB27A3056B3 /* SRWebSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SRWebSocket.m; path = SocketRocket/SRWebSocket.m; sourceTree = "<group>"; };
+		7D32FE031BADEE0A2BA193EA39300FAE /* SKYDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYDatabase.m; path = Pod/Classes/SKYDatabase.m; sourceTree = "<group>"; };
+		7DA5B9EF060DDE80C3541676F6F91941 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E113D7317FEC7811F1416FB99A409A6 /* SKYRecordDeserializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYRecordDeserializer.m; path = Pod/Classes/SKYRecordDeserializer.m; sourceTree = "<group>"; };
+		7E1A3F87E404EF62BE804639927CF366 /* SKYQueryCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYQueryCache.m; path = Pod/Classes/SKYQueryCache.m; sourceTree = "<group>"; };
+		805A9A2E15E1591748F67011C3D4BD43 /* SKYSubscriptionSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYSubscriptionSerializer.m; path = Pod/Classes/SKYSubscriptionSerializer.m; sourceTree = "<group>"; };
+		80C8C7478F111EE3C02C5178BFBD1996 /* SKYRecord_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYRecord_Private.h; path = Pod/Classes/SKYRecord_Private.h; sourceTree = "<group>"; };
+		80E1D6DA99E0B2F9A9DC3FF4D3CB4E20 /* Pods-photo-app-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-photo-app-frameworks.sh"; sourceTree = "<group>"; };
+		81B77C29DECD05904CF658D1F4E361DD /* SKYAsset.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYAsset.m; path = Pod/Classes/SKYAsset.m; sourceTree = "<group>"; };
+		8326AFC37EC718FB5ECA07CE7596C0F3 /* SKYFetchUserRoleOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYFetchUserRoleOperation.h; path = Pod/Classes/SKYFetchUserRoleOperation.h; sourceTree = "<group>"; };
+		8472268CDD64C92416ECB73D2DF9B39E /* NSURLRequest+SKYRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLRequest+SKYRequest.h"; path = "Pod/Classes/NSURLRequest+SKYRequest.h"; sourceTree = "<group>"; };
+		855BD5220C4C95EC6855BF69C18DD34F /* FMDB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-umbrella.h"; sourceTree = "<group>"; };
+		89FF6DB785547306766FDE80B34227E5 /* SocketRocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-prefix.pch"; sourceTree = "<group>"; };
+		8A342F53685C045A3C3CEF9EBD285273 /* FMDB.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FMDB.modulemap; sourceTree = "<group>"; };
+		8A93EE31574B8FE60D57E2B7092C1DB9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		8AF15E568D4C43E755DEEF6657CBAC8E /* SKYRemoveRelationsOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYRemoveRelationsOperation.m; path = Pod/Classes/SKYRemoveRelationsOperation.m; sourceTree = "<group>"; };
+		8B0BC37A4A24AACC156C281823DA070A /* SKYSubscriptionDeserializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYSubscriptionDeserializer.h; path = Pod/Classes/SKYSubscriptionDeserializer.h; sourceTree = "<group>"; };
+		8D0B00B9BE6AFFBD685505485D1F1506 /* SKYRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYRequest.m; path = Pod/Classes/SKYRequest.m; sourceTree = "<group>"; };
+		8DC57DF0BE205358E4A5EF6530AFAA32 /* SKYPubsubContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYPubsubContainer.h; path = Pod/Classes/SKYPubsubContainer.h; sourceTree = "<group>"; };
+		8FEE1E0B5E9A7C4A27B89CE7BCE4DBEB /* SKYModifyRecordsOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYModifyRecordsOperation.m; path = Pod/Classes/SKYModifyRecordsOperation.m; sourceTree = "<group>"; };
+		9104EF2512CC3BC848DEF7D094E4B3F9 /* SKYRecordID.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYRecordID.m; path = Pod/Classes/SKYRecordID.m; sourceTree = "<group>"; };
+		92319FFB8F9752A49CB247DAFF7F7F86 /* SKYSubscriptionDeserializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYSubscriptionDeserializer.m; path = Pod/Classes/SKYSubscriptionDeserializer.m; sourceTree = "<group>"; };
+		927A9154D2F3DF4EBAEBC5C061BD71DD /* SKYDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYDatabase.h; path = Pod/Classes/SKYDatabase.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95A770092183148EDA44BF8FAB476562 /* SKYSubscriptionSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYSubscriptionSerialization.m; path = Pod/Classes/SKYSubscriptionSerialization.m; sourceTree = "<group>"; };
+		95C9B7694914DAC56046BC18522ED622 /* SKYGetAssetPostRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYGetAssetPostRequestOperation.m; path = Pod/Classes/SKYGetAssetPostRequestOperation.m; sourceTree = "<group>"; };
+		996F3415B893C6CC6D08CCC131D19997 /* SocketRocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SocketRocket-dummy.m"; sourceTree = "<group>"; };
+		99D8A4DB7952C5E5ECC9F32DED5C67F5 /* SKYSubscriptionSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYSubscriptionSerializer.h; path = Pod/Classes/SKYSubscriptionSerializer.h; sourceTree = "<group>"; };
+		9A57C0DA4DA1B523B283DBB49D41AB57 /* SKYAccessControlDeserializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYAccessControlDeserializer.h; path = Pod/Classes/SKYAccessControlDeserializer.h; sourceTree = "<group>"; };
+		9AC96C4E09E0EA435A0A0BAA98DD5147 /* SKYKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYKit.h; path = Pod/Classes/SKYKit.h; sourceTree = "<group>"; };
+		9BC197BA218FF2D248902AFCAE3CC2D5 /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
+		9DB447D6DA8AB74352D48CCC924D1E7A /* SKYRecordSynchronizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYRecordSynchronizer.m; path = Pod/Classes/SKYRecordSynchronizer.m; sourceTree = "<group>"; };
+		9E30F4FA0EDE771A6C76E17D72FFEB2B /* SKYQueryDeserializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYQueryDeserializer.h; path = Pod/Classes/SKYQueryDeserializer.h; sourceTree = "<group>"; };
+		9EA2BA05B8FC6EF3153B276EF6C24A7C /* SKYGCMNotificationInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYGCMNotificationInfo.h; path = Pod/Classes/SKYGCMNotificationInfo.h; sourceTree = "<group>"; };
+		9F295303C8663F27FA0928A12A249282 /* SKYRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYRecord.m; path = Pod/Classes/SKYRecord.m; sourceTree = "<group>"; };
+		9FFB25E3B43DD5DE797DC3205D48EA05 /* SKYAssignUserRoleOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYAssignUserRoleOperation.h; path = Pod/Classes/SKYAssignUserRoleOperation.h; sourceTree = "<group>"; };
+		A002262818C5110630FD11DE3C825620 /* SocketRocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SocketRocket.modulemap; sourceTree = "<group>"; };
+		A024A6D8F42CFB105D2E85B7F229B24D /* SKYUnknownValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYUnknownValue.m; path = Pod/Classes/SKYUnknownValue.m; sourceTree = "<group>"; };
+		A03CD3363102C257DC7F5BED79BC285C /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
+		A30C2F24D76E38B74A94AF5F4B3E6640 /* SKYRecordID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYRecordID.h; path = Pod/Classes/SKYRecordID.h; sourceTree = "<group>"; };
+		A4AE50126ABD254882850D60CA9193D3 /* SKYDatabase_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYDatabase_Private.h; path = Pod/Classes/SKYDatabase_Private.h; sourceTree = "<group>"; };
+		A4F670E6C62A9898A3788022C827FC86 /* SKYQueryDeserializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYQueryDeserializer.m; path = Pod/Classes/SKYQueryDeserializer.m; sourceTree = "<group>"; };
+		A5AC062C388445E3843E8F12925FECC0 /* SKYSignupUserOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYSignupUserOperation.h; path = Pod/Classes/SKYSignupUserOperation.h; sourceTree = "<group>"; };
+		A66CDEB3A02B2D211C4A4A143DA84C3E /* SKYModifyRecordsOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYModifyRecordsOperation.h; path = Pod/Classes/SKYModifyRecordsOperation.h; sourceTree = "<group>"; };
+		A76CCDA25006D2738293C4B62005B3EA /* SKYDefineDefaultAccessOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYDefineDefaultAccessOperation.h; path = Pod/Classes/SKYDefineDefaultAccessOperation.h; sourceTree = "<group>"; };
+		A940499F7B603D633F7A3C2AF539BE98 /* NSError+SKYError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSError+SKYError.m"; path = "Pod/Classes/NSError+SKYError.m"; sourceTree = "<group>"; };
+		ACC963C85BDBB3C61194ADD41D9CC284 /* SKYQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYQuery.h; path = Pod/Classes/SKYQuery.h; sourceTree = "<group>"; };
+		ACCAC0614EDE61B1E71DE7B156A37280 /* SKYDefineCreationAccessOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYDefineCreationAccessOperation.h; path = Pod/Classes/SKYDefineCreationAccessOperation.h; sourceTree = "<group>"; };
+		B0E2D8662C4C895543449BF726AA52EF /* Pods-photo-app-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-photo-app-dummy.m"; sourceTree = "<group>"; };
+		B1A0DEA9F7DCE87B90C0DFE01ABCE9BA /* SRWebSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SRWebSocket.h; path = SocketRocket/SRWebSocket.h; sourceTree = "<group>"; };
+		B2E184AF135865FEA6CC9A697E999571 /* SKYGetCurrentUserOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYGetCurrentUserOperation.h; path = Pod/Classes/SKYGetCurrentUserOperation.h; sourceTree = "<group>"; };
+		B318793BC3EF1E27F1057DC7C22E3368 /* SKYRelation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYRelation.m; path = Pod/Classes/SKYRelation.m; sourceTree = "<group>"; };
+		B389D94FAF17BC34DC1D30380E201C2B /* SKYContainer_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYContainer_Private.h; path = Pod/Classes/SKYContainer_Private.h; sourceTree = "<group>"; };
+		B672A7808F7058E0AA21EB5261A3AE4A /* SKYAccessControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYAccessControl.m; path = Pod/Classes/SKYAccessControl.m; sourceTree = "<group>"; };
+		B678BC37F87DFFD0EA136CBE35965EF8 /* SKYRecordSynchronizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYRecordSynchronizer.h; path = Pod/Classes/SKYRecordSynchronizer.h; sourceTree = "<group>"; };
+		B7CE66185D3DE7DC399CACC219E2415C /* SKYPushContainer_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYPushContainer_Private.h; path = Pod/Classes/SKYPushContainer_Private.h; sourceTree = "<group>"; };
+		B80186ECE85914968D18F99193C33E7C /* SKYDataSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYDataSerialization.h; path = Pod/Classes/SKYDataSerialization.h; sourceTree = "<group>"; };
+		B88707D1926ABD3969CAEC7D6C2F030C /* SKYRecordStorageCoordinator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYRecordStorageCoordinator.m; path = Pod/Classes/SKYRecordStorageCoordinator.m; sourceTree = "<group>"; };
+		B9DAD1488FA2DBFA576A2DC423D0B34D /* SKYRecordStorageCoordinator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYRecordStorageCoordinator.h; path = Pod/Classes/SKYRecordStorageCoordinator.h; sourceTree = "<group>"; };
+		BB9EB105423F7D0BC1F3A5420B937BA4 /* SKYAuthContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYAuthContainer.h; path = Pod/Classes/SKYAuthContainer.h; sourceTree = "<group>"; };
+		BC7C936121E1A0416C7D2529723E268D /* SKYKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SKYKit.xcconfig; sourceTree = "<group>"; };
+		BD8EF585B6B1C715945582E00D922E41 /* SKYRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYRequest.h; path = Pod/Classes/SKYRequest.h; sourceTree = "<group>"; };
+		BE3208E5FEC82B4704AC2203615FD8F3 /* SKYRelationPredicate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYRelationPredicate.h; path = Pod/Classes/SKYRelationPredicate.h; sourceTree = "<group>"; };
+		BED5D83907C7B23B01F8DEDE17F54B7F /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
+		BF1B5D2715FC1A2A3181B7E977545803 /* SocketRocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-umbrella.h"; sourceTree = "<group>"; };
+		BF852AD16EDF1E59434CD9415EEC06DD /* SKYOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYOperation.m; path = Pod/Classes/SKYOperation.m; sourceTree = "<group>"; };
+		BF9303C0466CA02EDFB64D86B750B73B /* SKYLambdaOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYLambdaOperation.h; path = Pod/Classes/SKYLambdaOperation.h; sourceTree = "<group>"; };
+		C0CCF3D27821184B1678F283B374988E /* SKYDefineCreationAccessOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYDefineCreationAccessOperation.m; path = Pod/Classes/SKYDefineCreationAccessOperation.m; sourceTree = "<group>"; };
+		C1B9B2846815316344F23E84E9A8CADC /* SKYDataSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYDataSerialization.m; path = Pod/Classes/SKYDataSerialization.m; sourceTree = "<group>"; };
+		C2E1E6F4D4D2ED368F3E5FEF8DBE2223 /* SKYAuthContainer+ForgotPassword.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SKYAuthContainer+ForgotPassword.h"; path = "Pod/Extensions/Forgot Password/SKYAuthContainer+ForgotPassword.h"; sourceTree = "<group>"; };
+		C5BC53711130034AE75D0FA147B433EB /* SKYResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYResponse.m; path = Pod/Classes/SKYResponse.m; sourceTree = "<group>"; };
+		C8E66588D1657A32FEFB9E138ADB06A7 /* SKYLocationSortDescriptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYLocationSortDescriptor.m; path = Pod/Classes/SKYLocationSortDescriptor.m; sourceTree = "<group>"; };
+		C927E2415031B35DCD5AF166673C64E1 /* SKYQueryOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYQueryOperation.h; path = Pod/Classes/SKYQueryOperation.h; sourceTree = "<group>"; };
+		C9FF2F312B3BCE861E5D43278F70EDD8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB1654040958B176DC00CD2915012B55 /* SKYRole.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYRole.h; path = Pod/Classes/SKYRole.h; sourceTree = "<group>"; };
+		CCDACABF3BAB76EBDC48F2CEAE4EB7FE /* SKYAuthContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYAuthContainer.m; path = Pod/Classes/SKYAuthContainer.m; sourceTree = "<group>"; };
+		CD5542A1119EF897614FA31965F4C3F7 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
+		CE23C5A60F013DDAC103398429B6609C /* SKYLoginUserOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYLoginUserOperation.m; path = Pod/Classes/SKYLoginUserOperation.m; sourceTree = "<group>"; };
+		CEE98C2CDF0F34A6589E9C9045D5B538 /* SKYDeleteRecordsOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYDeleteRecordsOperation.h; path = Pod/Classes/SKYDeleteRecordsOperation.h; sourceTree = "<group>"; };
+		CF43D1AD898CA3E7F14222AC407CE89A /* SKYRecordChange.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYRecordChange.m; path = Pod/Classes/SKYRecordChange.m; sourceTree = "<group>"; };
+		CFA7B84566F71D638E748258E9ED6103 /* SKYQueryCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYQueryCache.h; path = Pod/Classes/SKYQueryCache.h; sourceTree = "<group>"; };
+		D16F73A11D93C03179EBFB3193386175 /* SKYAccessControlDeserializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYAccessControlDeserializer.m; path = Pod/Classes/SKYAccessControlDeserializer.m; sourceTree = "<group>"; };
+		D1D334A270892A98E0AD039BB1DA270C /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3E4FDCD20058545697DB2415AEB4BCD /* SKYQuerySerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYQuerySerializer.h; path = Pod/Classes/SKYQuerySerializer.h; sourceTree = "<group>"; };
+		D40E95CA168173F86690D2248BA57324 /* NSURLRequest+SKYRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLRequest+SKYRequest.m"; path = "Pod/Classes/NSURLRequest+SKYRequest.m"; sourceTree = "<group>"; };
+		D4A30638FE4179FEBC75A5EED3E885C8 /* SKYDefineAdminRolesOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYDefineAdminRolesOperation.m; path = Pod/Classes/SKYDefineAdminRolesOperation.m; sourceTree = "<group>"; };
+		D51A31A4BDAE221C82EB070B2BF50958 /* SKYUnregisterDeviceOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYUnregisterDeviceOperation.h; path = Pod/Classes/SKYUnregisterDeviceOperation.h; sourceTree = "<group>"; };
+		D6E83A8283B4188083F99F6BC6F8F7DB /* SKYDatabaseOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYDatabaseOperation.h; path = Pod/Classes/SKYDatabaseOperation.h; sourceTree = "<group>"; };
+		D88889F71FF6973F79653FCFAF88F855 /* SKYQuery+Caching.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SKYQuery+Caching.m"; path = "Pod/Classes/SKYQuery+Caching.m"; sourceTree = "<group>"; };
+		D89F369F05F551B685C51877FC93A33E /* SKYSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYSequence.m; path = Pod/Classes/SKYSequence.m; sourceTree = "<group>"; };
+		DC02D282942CE077BD08449F204BB9C1 /* SKYRecordStorageMemoryStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYRecordStorageMemoryStore.h; path = Pod/Classes/SKYRecordStorageMemoryStore.h; sourceTree = "<group>"; };
+		DCAE1C67DB9EC681D31451A91BAC6D61 /* SKYSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYSequence.h; path = Pod/Classes/SKYSequence.h; sourceTree = "<group>"; };
+		DD3A6A3F69C705E8E8EF84D9969B22B1 /* SKYLocationSortDescriptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYLocationSortDescriptor.h; path = Pod/Classes/SKYLocationSortDescriptor.h; sourceTree = "<group>"; };
+		DD4F6A50CF10D2DBD45A555D4C20867E /* SKYLogoutUserOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYLogoutUserOperation.h; path = Pod/Classes/SKYLogoutUserOperation.h; sourceTree = "<group>"; };
+		DF2EDABC1C97C91B76585BACDF68B38E /* SKYUnknownValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYUnknownValue.h; path = Pod/Classes/SKYUnknownValue.h; sourceTree = "<group>"; };
+		DF3B7E809198DC8C9AD324618E971E84 /* SKYKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SKYKit-dummy.m"; sourceTree = "<group>"; };
+		E145674967FDB21B87956E7CEF979E4D /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
+		E1F91C02A2DD7F00666370CA787767B2 /* SKYQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYQuery.m; path = Pod/Classes/SKYQuery.m; sourceTree = "<group>"; };
+		E28B05ED7A9ABB29864154D0DE002A11 /* SKYRecordChange_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYRecordChange_Private.h; path = Pod/Classes/SKYRecordChange_Private.h; sourceTree = "<group>"; };
+		E2F879BFAC1448AC4733B02482D8405F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E6D17696300B7784CCB6399FBAE4A0C2 /* SKYChangePasswordOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYChangePasswordOperation.m; path = Pod/Classes/SKYChangePasswordOperation.m; sourceTree = "<group>"; };
+		E71EB0AD5014C92BF79822B76D07E399 /* SocketRocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SocketRocket.h; path = SocketRocket/SocketRocket.h; sourceTree = "<group>"; };
+		E77B0BD7C4396170E2702BAEF2BCE382 /* FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.xcconfig; sourceTree = "<group>"; };
+		E866F7011E4E308F8E63CA3646005728 /* SKYSendPushNotificationOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYSendPushNotificationOperation.m; path = Pod/Classes/SKYSendPushNotificationOperation.m; sourceTree = "<group>"; };
+		EC8CFB9B28DAA5A1386E5FB1D0D82FF6 /* SKYPushContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYPushContainer.h; path = Pod/Classes/SKYPushContainer.h; sourceTree = "<group>"; };
+		ED10A917828075A39AB86603D9EBF054 /* SKYRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYRecord.h; path = Pod/Classes/SKYRecord.h; sourceTree = "<group>"; };
+		EDCC5B20F48D7250F5788DC565B9A378 /* Pods-photo-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-photo-app.debug.xcconfig"; sourceTree = "<group>"; };
+		EE518ADF9A0FBCCDBDF18C52D3D74C17 /* SKYPublicDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYPublicDatabase.m; path = Pod/Classes/SKYPublicDatabase.m; sourceTree = "<group>"; };
+		EF4BE2ED4095495662ED5A02BB63792E /* SKYDownloadAssetOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYDownloadAssetOperation.h; path = Pod/Classes/SKYDownloadAssetOperation.h; sourceTree = "<group>"; };
+		EF873DF9E25C1D2AFDF61E84240F11D0 /* SKYNotification_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYNotification_Private.h; path = Pod/Classes/SKYNotification_Private.h; sourceTree = "<group>"; };
+		EFE188E3563BD777AB03F02B77A851FE /* SKYRecordStorage_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYRecordStorage_Private.h; path = Pod/Classes/SKYRecordStorage_Private.h; sourceTree = "<group>"; };
+		F2851059C0936FB05112CF3D0DA0B99B /* SKYNotificationInfoDeserializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYNotificationInfoDeserializer.m; path = Pod/Classes/SKYNotificationInfoDeserializer.m; sourceTree = "<group>"; };
+		F57E07E1388055A0E52F991754721086 /* SKYRecordDeserializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYRecordDeserializer.h; path = Pod/Classes/SKYRecordDeserializer.h; sourceTree = "<group>"; };
+		F64E34652EC03A3315DF945A56B719D3 /* SKYUnregisterDeviceOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYUnregisterDeviceOperation.m; path = Pod/Classes/SKYUnregisterDeviceOperation.m; sourceTree = "<group>"; };
+		F6C17D73452B3E35E395A473E51CD501 /* SKYAccessControlEntry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYAccessControlEntry.m; path = Pod/Classes/SKYAccessControlEntry.m; sourceTree = "<group>"; };
+		F8691A29F376F98B1AA98BDAF7C7DC63 /* SKYRecordSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYRecordSerialization.h; path = Pod/Classes/SKYRecordSerialization.h; sourceTree = "<group>"; };
+		F8F3042580FD9866378859B961144496 /* SKYDeleteRecordsOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKYDeleteRecordsOperation.m; path = Pod/Classes/SKYDeleteRecordsOperation.m; sourceTree = "<group>"; };
+		FB4B8ED991AD65350B977769BDDE60A5 /* SKYAccessControlEntry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYAccessControlEntry.h; path = Pod/Classes/SKYAccessControlEntry.h; sourceTree = "<group>"; };
+		FFDE267627D72586080146E3A0E3B784 /* SKYAuthContainer_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKYAuthContainer_Private.h; path = Pod/Classes/SKYAuthContainer_Private.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68E9013B73C535D6CE8F1859B45D4E28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEC061C8EE8F8CEAEA997F6747A556A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74342CDC310C846938B48B155FC97C11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3051D28D86F6C1C200D8030B7DCAAF3C /* CFNetwork.framework in Frameworks */,
+				EB5E90632696F7CF497ACD375582BDB6 /* Foundation.framework in Frameworks */,
+				D75B0ADB8A9F09418FAB4C17562634C2 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E573A32F046CF4E2795AD3B2BB922312 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A4DC1D5DD9DA1A3980E9BF5478C8AE0 /* FMDB.framework in Frameworks */,
+				1A420E0E7E27C289A041DBB731746402 /* Foundation.framework in Frameworks */,
+				BC1C6E4CA3F36F936B36CB408BC7939A /* SocketRocket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEFB61A65EB8DA6653B544822EB9CE44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72563ADE99DC9E753B27D48B16AA3654 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0949265401BC44C4D39EFC56CC749F3B /* standard */ = {
+			isa = PBXGroup;
+			children = (
+				A03CD3363102C257DC7F5BED79BC285C /* FMDatabase.h */,
+				9BC197BA218FF2D248902AFCAE3CC2D5 /* FMDatabase.m */,
+				6AE21CE0B1BF8549B6C03DB1772D9528 /* FMDatabaseAdditions.h */,
+				0BC9CFCD51B2AB47C3B6A39659716945 /* FMDatabaseAdditions.m */,
+				3FA684A3E0E7F0299DD5D21CD27857CE /* FMDatabasePool.h */,
+				235179821D017FD153D8B07976F3D819 /* FMDatabasePool.m */,
+				5FBA2E01A5DB6738DC751B607EEC4172 /* FMDatabaseQueue.h */,
+				CD5542A1119EF897614FA31965F4C3F7 /* FMDatabaseQueue.m */,
+				E145674967FDB21B87956E7CEF979E4D /* FMDB.h */,
+				1A1F9EF5BED718C148AB1914BB302CDF /* FMResultSet.h */,
+				BED5D83907C7B23B01F8DEDE17F54B7F /* FMResultSet.m */,
+			);
+			name = standard;
+			sourceTree = "<group>";
+		};
+		1D5457D0CB8A22C703D029D985943C26 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7DA5B9EF060DDE80C3541676F6F91941 /* Info.plist */,
+				5D776A9A2BB6C315AE431293B7172980 /* SKYKit.modulemap */,
+				BC7C936121E1A0416C7D2529723E268D /* SKYKit.xcconfig */,
+				DF3B7E809198DC8C9AD324618E971E84 /* SKYKit-dummy.m */,
+				3F250E0D4D6BECF83B13C55359CF6381 /* SKYKit-prefix.pch */,
+				400488BA8AFFBF4D3A16F3F956063362 /* SKYKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SKYKit";
+			sourceTree = "<group>";
+		};
+		2128E2B41F65568FA61A2401B8314A89 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				0949265401BC44C4D39EFC56CC749F3B /* standard */,
+				E203B5C823CDA1004F3D293146031AE5 /* Support Files */,
+			);
+			name = FMDB;
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		39BE99216DEB952E7EE6D76EE262F852 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				C2E1E6F4D4D2ED368F3E5FEF8DBE2223 /* SKYAuthContainer+ForgotPassword.h */,
+				0523B78A5EB43E4C3B0E6F99ED8B33CF /* SKYAuthContainer+ForgotPassword.m */,
+			);
+			name = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		453B883392B96102BDA362C547012BD4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1D334A270892A98E0AD039BB1DA270C /* FMDB.framework */,
+				1E89489F0386A43DB5429E636011EAAF /* SocketRocket.framework */,
+				75E7BAEB985993DC63083D060D3AD0D1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6387516D7E2EAEFA7E529584FBDC3659 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45A5992B578557D0A63B5B924D978047 /* FMDB.framework */,
+				3BFC8D29BF10E18D9A2100A01836069F /* Pods_photo_app.framework */,
+				5223F36BB3E218801C390A20EA52CE35 /* SKYKit.framework */,
+				3050121FB6E3A579C1097A187E6C46BC /* SocketRocket.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75E7BAEB985993DC63083D060D3AD0D1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8A93EE31574B8FE60D57E2B7092C1DB9 /* CFNetwork.framework */,
+				E2F879BFAC1448AC4733B02482D8405F /* Foundation.framework */,
+				11D89654FDC663E3A3312E95D4B36692 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				453B883392B96102BDA362C547012BD4 /* Frameworks */,
+				A9E0F48911711F7EB6E3C5709C18E8FD /* Pods */,
+				6387516D7E2EAEFA7E529584FBDC3659 /* Products */,
+				9F2E1523680AC22860835878C55A327C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7DD7C43399E0B1DB92C279C52760F86B /* SKYKit */ = {
+			isa = PBXGroup;
+			children = (
+				E9C3EE948B3C65E5D5A398918682F913 /* Core */,
+				39BE99216DEB952E7EE6D76EE262F852 /* ForgotPassword */,
+				1D5457D0CB8A22C703D029D985943C26 /* Support Files */,
+			);
+			name = SKYKit;
+			path = SKYKit;
+			sourceTree = "<group>";
+		};
+		9F2E1523680AC22860835878C55A327C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDD5079D2C062BE3D7D723F5B0FBA726 /* Pods-photo-app */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A9E0F48911711F7EB6E3C5709C18E8FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2128E2B41F65568FA61A2401B8314A89 /* FMDB */,
+				7DD7C43399E0B1DB92C279C52760F86B /* SKYKit */,
+				D8E182717AF47EEB5F7B7488AE2BC21E /* SocketRocket */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CD831442A20CA75E9B665ED9D14C43A4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				49E512A43D0AD7B94F078D53F1B17B21 /* Info.plist */,
+				A002262818C5110630FD11DE3C825620 /* SocketRocket.modulemap */,
+				759F96CC8665EF575A1F71545CD0A233 /* SocketRocket.xcconfig */,
+				996F3415B893C6CC6D08CCC131D19997 /* SocketRocket-dummy.m */,
+				89FF6DB785547306766FDE80B34227E5 /* SocketRocket-prefix.pch */,
+				BF1B5D2715FC1A2A3181B7E977545803 /* SocketRocket-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SocketRocket";
+			sourceTree = "<group>";
+		};
+		D8E182717AF47EEB5F7B7488AE2BC21E /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				E71EB0AD5014C92BF79822B76D07E399 /* SocketRocket.h */,
+				B1A0DEA9F7DCE87B90C0DFE01ABCE9BA /* SRWebSocket.h */,
+				7B7AE453ADB4E2C882370DB27A3056B3 /* SRWebSocket.m */,
+				CD831442A20CA75E9B665ED9D14C43A4 /* Support Files */,
+			);
+			name = SocketRocket;
+			path = SocketRocket;
+			sourceTree = "<group>";
+		};
+		E203B5C823CDA1004F3D293146031AE5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A342F53685C045A3C3CEF9EBD285273 /* FMDB.modulemap */,
+				E77B0BD7C4396170E2702BAEF2BCE382 /* FMDB.xcconfig */,
+				09635E3EF852A93117EBB7960A2DA3EB /* FMDB-dummy.m */,
+				42923686CC55BC72E1259F1965863FAB /* FMDB-prefix.pch */,
+				855BD5220C4C95EC6855BF69C18DD34F /* FMDB-umbrella.h */,
+				C9FF2F312B3BCE861E5D43278F70EDD8 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FMDB";
+			sourceTree = "<group>";
+		};
+		E9C3EE948B3C65E5D5A398918682F913 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				569A356A84BCD9A3E979F5F8576D371A /* NSError+SKYError.h */,
+				A940499F7B603D633F7A3C2AF539BE98 /* NSError+SKYError.m */,
+				8472268CDD64C92416ECB73D2DF9B39E /* NSURLRequest+SKYRequest.h */,
+				D40E95CA168173F86690D2248BA57324 /* NSURLRequest+SKYRequest.m */,
+				1717081AB677691F03262C1D8B5B6092 /* SKYAccessControl.h */,
+				B672A7808F7058E0AA21EB5261A3AE4A /* SKYAccessControl.m */,
+				3FDBAE53C91039640543CE0B7BAAC7F2 /* SKYAccessControl_Private.h */,
+				9A57C0DA4DA1B523B283DBB49D41AB57 /* SKYAccessControlDeserializer.h */,
+				D16F73A11D93C03179EBFB3193386175 /* SKYAccessControlDeserializer.m */,
+				FB4B8ED991AD65350B977769BDDE60A5 /* SKYAccessControlEntry.h */,
+				F6C17D73452B3E35E395A473E51CD501 /* SKYAccessControlEntry.m */,
+				7490DB9161605F92B5A950CE1D2C7245 /* SKYAccessControlSerializer.h */,
+				6337130DE796C5D455246726265EDCD7 /* SKYAccessControlSerializer.m */,
+				4C68F5A23CB8737D04CECE098ACF688A /* SKYAccessToken.h */,
+				79CABE8356ED5DADF14F8AE21BB19749 /* SKYAccessToken.m */,
+				356EDB66FCA1FF2B91017320CDA1D614 /* SKYAddRelationsOperation.h */,
+				2723535E3D1D1EA0F9515E3E4F75CA87 /* SKYAddRelationsOperation.m */,
+				14808A2CFFC34D7B9F1FFA07B6E143D5 /* SKYAPSNotificationInfo.h */,
+				3F1A1D8D8794EB63F9EE7319C19557BC /* SKYAPSNotificationInfo.m */,
+				5C479C47E3DFA692CCA842F6E4A77F6C /* SKYAsset.h */,
+				81B77C29DECD05904CF658D1F4E361DD /* SKYAsset.m */,
+				129CA4AD52142EB262FC459029946305 /* SKYAsset_Private.h */,
+				9FFB25E3B43DD5DE797DC3205D48EA05 /* SKYAssignUserRoleOperation.h */,
+				6CDFFE16A0D718AC5BE47D16573D7F3F /* SKYAssignUserRoleOperation.m */,
+				BB9EB105423F7D0BC1F3A5420B937BA4 /* SKYAuthContainer.h */,
+				CCDACABF3BAB76EBDC48F2CEAE4EB7FE /* SKYAuthContainer.m */,
+				FFDE267627D72586080146E3A0E3B784 /* SKYAuthContainer_Private.h */,
+				469764D5E903C85B7A9865EACB5F8427 /* SKYChangePasswordOperation.h */,
+				E6D17696300B7784CCB6399FBAE4A0C2 /* SKYChangePasswordOperation.m */,
+				01FA1EC4B411C065E3E58F8E7D92801A /* SKYContainer.h */,
+				08370E416E476D5BD9FDF59072351439 /* SKYContainer.m */,
+				B389D94FAF17BC34DC1D30380E201C2B /* SKYContainer_Private.h */,
+				927A9154D2F3DF4EBAEBC5C061BD71DD /* SKYDatabase.h */,
+				7D32FE031BADEE0A2BA193EA39300FAE /* SKYDatabase.m */,
+				A4AE50126ABD254882850D60CA9193D3 /* SKYDatabase_Private.h */,
+				D6E83A8283B4188083F99F6BC6F8F7DB /* SKYDatabaseOperation.h */,
+				28123DBB5A82A8811565C6631BD2BDE2 /* SKYDatabaseOperation.m */,
+				B80186ECE85914968D18F99193C33E7C /* SKYDataSerialization.h */,
+				C1B9B2846815316344F23E84E9A8CADC /* SKYDataSerialization.m */,
+				4556E9A69D330FEF807FC4B2AAE1E481 /* SKYDefineAdminRolesOperation.h */,
+				D4A30638FE4179FEBC75A5EED3E885C8 /* SKYDefineAdminRolesOperation.m */,
+				ACCAC0614EDE61B1E71DE7B156A37280 /* SKYDefineCreationAccessOperation.h */,
+				C0CCF3D27821184B1678F283B374988E /* SKYDefineCreationAccessOperation.m */,
+				A76CCDA25006D2738293C4B62005B3EA /* SKYDefineDefaultAccessOperation.h */,
+				6AD92404F403669F2B1B3C97A2C4F615 /* SKYDefineDefaultAccessOperation.m */,
+				CEE98C2CDF0F34A6589E9C9045D5B538 /* SKYDeleteRecordsOperation.h */,
+				F8F3042580FD9866378859B961144496 /* SKYDeleteRecordsOperation.m */,
+				15DD3CF49F4098ABFBDB94AE2BE2F8A4 /* SKYDeleteSubscriptionsOperation.h */,
+				42D20A917A077F1926308DBE939CB418 /* SKYDeleteSubscriptionsOperation.m */,
+				EF4BE2ED4095495662ED5A02BB63792E /* SKYDownloadAssetOperation.h */,
+				47C276257D9DF12FCC556A55BA61014A /* SKYDownloadAssetOperation.m */,
+				465F9F7DE174C4A67FC77E06BFE8A476 /* SKYError.h */,
+				0CF7A1FB4051ADD501351383A62216F0 /* SKYError.m */,
+				2F01EEDCF7046091D889148D45A11BB0 /* SKYErrorCreator.h */,
+				40FAEACE46018EB46E11E3C020568260 /* SKYErrorCreator.m */,
+				0B444B7EBF859EA6EA4ABA6F461B6081 /* SKYFetchRecordsOperation.h */,
+				2693CB0266121F0A0FD3822DD6E6C9D0 /* SKYFetchRecordsOperation.m */,
+				09838B98BD93E456BE86C67768865AF3 /* SKYFetchSubscriptionsOperation.h */,
+				1693863AE9B2E217A005419EB65FE75B /* SKYFetchSubscriptionsOperation.m */,
+				8326AFC37EC718FB5ECA07CE7596C0F3 /* SKYFetchUserRoleOperation.h */,
+				4CF08158474CB940E33569A4A4EEE7C6 /* SKYFetchUserRoleOperation.m */,
+				9EA2BA05B8FC6EF3153B276EF6C24A7C /* SKYGCMNotificationInfo.h */,
+				59F17E5C9C7B75BE66C41CF50639542B /* SKYGCMNotificationInfo.m */,
+				52526F4F13E8AE4BD4573541FC53FCC2 /* SKYGetAssetPostRequestOperation.h */,
+				95C9B7694914DAC56046BC18522ED622 /* SKYGetAssetPostRequestOperation.m */,
+				B2E184AF135865FEA6CC9A697E999571 /* SKYGetCurrentUserOperation.h */,
+				00FB69ABDE68CCF97D5BAF27C309532F /* SKYGetCurrentUserOperation.m */,
+				9AC96C4E09E0EA435A0A0BAA98DD5147 /* SKYKit.h */,
+				BF9303C0466CA02EDFB64D86B750B73B /* SKYLambdaOperation.h */,
+				4D6A8CD7B6A23C0E5AD3F35F49089CC9 /* SKYLambdaOperation.m */,
+				DD3A6A3F69C705E8E8EF84D9969B22B1 /* SKYLocationSortDescriptor.h */,
+				C8E66588D1657A32FEFB9E138ADB06A7 /* SKYLocationSortDescriptor.m */,
+				23DE0DCD0F64C3CA748E6B079D292585 /* SKYLoginUserOperation.h */,
+				CE23C5A60F013DDAC103398429B6609C /* SKYLoginUserOperation.m */,
+				DD4F6A50CF10D2DBD45A555D4C20867E /* SKYLogoutUserOperation.h */,
+				131F7E4BA0D11E36BC0429C029F01A96 /* SKYLogoutUserOperation.m */,
+				A66CDEB3A02B2D211C4A4A143DA84C3E /* SKYModifyRecordsOperation.h */,
+				8FEE1E0B5E9A7C4A27B89CE7BCE4DBEB /* SKYModifyRecordsOperation.m */,
+				3710A43F6191EC204FAC0746F834855D /* SKYModifySubscriptionsOperation.h */,
+				61FFAA13379D11A20196857C540EF380 /* SKYModifySubscriptionsOperation.m */,
+				2635042A120798EF0D9CD45DB49126D1 /* SKYNotification.h */,
+				7AFEA57073FF7AC86C8B9B8DE2CBF406 /* SKYNotification.m */,
+				EF873DF9E25C1D2AFDF61E84240F11D0 /* SKYNotification_Private.h */,
+				2DEBE45717728B82077CAFDA9FEB8685 /* SKYNotificationID.h */,
+				21DE1ECBAACF8DB32C3EB6D7C921223C /* SKYNotificationID.m */,
+				0D194DFD68E2621DAD96C6D685EFD41F /* SKYNotificationInfo.h */,
+				67052C5957BA2AD76FBCF00E625DE0C1 /* SKYNotificationInfo.m */,
+				2290E1500DF4504047D42488880E1607 /* SKYNotificationInfoDeserializer.h */,
+				F2851059C0936FB05112CF3D0DA0B99B /* SKYNotificationInfoDeserializer.m */,
+				08FC0802707D340AE1AFCF286C17B601 /* SKYNotificationInfoSerializer.h */,
+				1E04FD8787A8F6CCD1A573C5C8A358F9 /* SKYNotificationInfoSerializer.m */,
+				44EAB042D17428CDA32A6E7E3C024F3B /* SKYOperation.h */,
+				BF852AD16EDF1E59434CD9415EEC06DD /* SKYOperation.m */,
+				65ED44A12ECA537B772A14654EAB2F5D /* SKYOperation_Private.h */,
+				770BCEEDE11ED061BAD7E620183E5175 /* SKYOperationSubclass.h */,
+				4839E637FA33F4D429C82119581013E2 /* SKYPostAssetOperation.h */,
+				5DF76E0F4E8524B31CDD9621CFF4CEEB /* SKYPostAssetOperation.m */,
+				07ABB89766F7D20CD71C2E7D839E8D09 /* SKYPublicDatabase.h */,
+				EE518ADF9A0FBCCDBDF18C52D3D74C17 /* SKYPublicDatabase.m */,
+				72546A519900CF17C0BE6970CBD193FD /* SKYPubsubClient.h */,
+				73869B247AA5E2A4F05AD3C5855EA14D /* SKYPubsubClient.m */,
+				8DC57DF0BE205358E4A5EF6530AFAA32 /* SKYPubsubContainer.h */,
+				58B2D01193DC098D150FA75CDCA2D517 /* SKYPubsubContainer.m */,
+				6C62F317CDD5756198709A3F05987EED /* SKYPubsubContainer_Private.h */,
+				EC8CFB9B28DAA5A1386E5FB1D0D82FF6 /* SKYPushContainer.h */,
+				3D93B5EA7576F1796B2078F6F53104B8 /* SKYPushContainer.m */,
+				B7CE66185D3DE7DC399CACC219E2415C /* SKYPushContainer_Private.h */,
+				ACC963C85BDBB3C61194ADD41D9CC284 /* SKYQuery.h */,
+				E1F91C02A2DD7F00666370CA787767B2 /* SKYQuery.m */,
+				51600707D73BF866690260DC69D41B81 /* SKYQuery+Caching.h */,
+				D88889F71FF6973F79653FCFAF88F855 /* SKYQuery+Caching.m */,
+				CFA7B84566F71D638E748258E9ED6103 /* SKYQueryCache.h */,
+				7E1A3F87E404EF62BE804639927CF366 /* SKYQueryCache.m */,
+				506D7CF09C92E2176890FFFB30806FE7 /* SKYQueryCursor.h */,
+				2A38A814FB469348F747B9267B8E6B78 /* SKYQueryCursor.m */,
+				9E30F4FA0EDE771A6C76E17D72FFEB2B /* SKYQueryDeserializer.h */,
+				A4F670E6C62A9898A3788022C827FC86 /* SKYQueryDeserializer.m */,
+				C927E2415031B35DCD5AF166673C64E1 /* SKYQueryOperation.h */,
+				48AAE6B40769A26D1FF56DBC4AD18038 /* SKYQueryOperation.m */,
+				D3E4FDCD20058545697DB2415AEB4BCD /* SKYQuerySerializer.h */,
+				6FCC24573EEA3BF5F88828F05A4D49A7 /* SKYQuerySerializer.m */,
+				ED10A917828075A39AB86603D9EBF054 /* SKYRecord.h */,
+				9F295303C8663F27FA0928A12A249282 /* SKYRecord.m */,
+				80C8C7478F111EE3C02C5178BFBD1996 /* SKYRecord_Private.h */,
+				3CAA8F4DFF7E4543295377D7A69A6D93 /* SKYRecordChange.h */,
+				CF43D1AD898CA3E7F14222AC407CE89A /* SKYRecordChange.m */,
+				E28B05ED7A9ABB29864154D0DE002A11 /* SKYRecordChange_Private.h */,
+				F57E07E1388055A0E52F991754721086 /* SKYRecordDeserializer.h */,
+				7E113D7317FEC7811F1416FB99A409A6 /* SKYRecordDeserializer.m */,
+				A30C2F24D76E38B74A94AF5F4B3E6640 /* SKYRecordID.h */,
+				9104EF2512CC3BC848DEF7D094E4B3F9 /* SKYRecordID.m */,
+				F8691A29F376F98B1AA98BDAF7C7DC63 /* SKYRecordSerialization.h */,
+				6AEC30DBE97423D4D3B5D95446D48C19 /* SKYRecordSerialization.m */,
+				3410FEAACA277ED3B129E58DA90CE316 /* SKYRecordSerializer.h */,
+				2080305BA7675319D7D00CBBD0DF3C2B /* SKYRecordSerializer.m */,
+				15B9ACA29BC56424ECF11A74BE6C867A /* SKYRecordStorage.h */,
+				58FB69646680546DBAF938ABDBEA4028 /* SKYRecordStorage.m */,
+				EFE188E3563BD777AB03F02B77A851FE /* SKYRecordStorage_Private.h */,
+				23F17BCD437ABE6C8CD827F57C73A283 /* SKYRecordStorageBackingStore.h */,
+				B9DAD1488FA2DBFA576A2DC423D0B34D /* SKYRecordStorageCoordinator.h */,
+				B88707D1926ABD3969CAEC7D6C2F030C /* SKYRecordStorageCoordinator.m */,
+				4AE0A641217282A5E846E4896412C422 /* SKYRecordStorageFileBackedMemoryStore.h */,
+				35838CBA1064C161671452FE612CC823 /* SKYRecordStorageFileBackedMemoryStore.m */,
+				DC02D282942CE077BD08449F204BB9C1 /* SKYRecordStorageMemoryStore.h */,
+				2D7DA722B91393BAB6F73B8ECE9BB25C /* SKYRecordStorageMemoryStore.m */,
+				6A2699573A997AC87C0C37D963354698 /* SKYRecordStorageMemoryStore_Private.h */,
+				199BDC913C1458F201284B2C5DF58604 /* SKYRecordStorageSqliteStore.h */,
+				63B07EFD19D29F2F0D52243E959C03C3 /* SKYRecordStorageSqliteStore.m */,
+				B678BC37F87DFFD0EA136CBE35965EF8 /* SKYRecordSynchronizer.h */,
+				9DB447D6DA8AB74352D48CCC924D1E7A /* SKYRecordSynchronizer.m */,
+				3345AEADBB908DF1495DC798B8A15155 /* SKYReference.h */,
+				633903281684B167959286EDC5852266 /* SKYReference.m */,
+				4567467E70EB6F9CCCEC4EE779BCDDF9 /* SKYRegisterDeviceOperation.h */,
+				2F472BCB8089C513C19F356827CBDEA7 /* SKYRegisterDeviceOperation.m */,
+				5C4783CF4B4AE5E06E65F4586199A51F /* SKYRelation.h */,
+				B318793BC3EF1E27F1057DC7C22E3368 /* SKYRelation.m */,
+				BE3208E5FEC82B4704AC2203615FD8F3 /* SKYRelationPredicate.h */,
+				0D896D48921F3DB03446612B4A91425A /* SKYRelationPredicate.m */,
+				0C86D9C246E570D06D99A538CEAB56D5 /* SKYRemoveRelationsOperation.h */,
+				8AF15E568D4C43E755DEEF6657CBAC8E /* SKYRemoveRelationsOperation.m */,
+				BD8EF585B6B1C715945582E00D922E41 /* SKYRequest.h */,
+				8D0B00B9BE6AFFBD685505485D1F1506 /* SKYRequest.m */,
+				6F953C3B66928CDC6A5827E682B03F93 /* SKYResponse.h */,
+				C5BC53711130034AE75D0FA147B433EB /* SKYResponse.m */,
+				1976EC80DC7963BB07DE07ED500A1D36 /* SKYResultArrayResponse.h */,
+				3148DFA22C6F299A53C289C3E5859C10 /* SKYResultArrayResponse.m */,
+				7031387F6DB5593ED3E981819982C6D5 /* SKYRevokeUserRoleOperation.h */,
+				162DA8DE49E8A6D818650332E079CB17 /* SKYRevokeUserRoleOperation.m */,
+				CB1654040958B176DC00CD2915012B55 /* SKYRole.h */,
+				2A2A4A3050BFC277BB90015825C5A7A0 /* SKYRole.m */,
+				712E2ABBD2208C9FD8C6389D98487DBD /* SKYSendPushNotificationOperation.h */,
+				E866F7011E4E308F8E63CA3646005728 /* SKYSendPushNotificationOperation.m */,
+				DCAE1C67DB9EC681D31451A91BAC6D61 /* SKYSequence.h */,
+				D89F369F05F551B685C51877FC93A33E /* SKYSequence.m */,
+				73505226E63FB5F7E4A527AB09833085 /* SKYSetUserDefaultRoleOperation.h */,
+				59E313C252ECB8A7BC1F934E41286B95 /* SKYSetUserDefaultRoleOperation.m */,
+				A5AC062C388445E3843E8F12925FECC0 /* SKYSignupUserOperation.h */,
+				5FA979E45797B54D2DC5F662FE8D8A54 /* SKYSignupUserOperation.m */,
+				394E5A6424A04E485DB37AD662ADECF3 /* SKYSubscription.h */,
+				39789A00BD1311FD5A121798A64FFDC9 /* SKYSubscription.m */,
+				8B0BC37A4A24AACC156C281823DA070A /* SKYSubscriptionDeserializer.h */,
+				92319FFB8F9752A49CB247DAFF7F7F86 /* SKYSubscriptionDeserializer.m */,
+				3978E08794E86B3300C6DFB282AB4F4E /* SKYSubscriptionSerialization.h */,
+				95A770092183148EDA44BF8FAB476562 /* SKYSubscriptionSerialization.m */,
+				99D8A4DB7952C5E5ECC9F32DED5C67F5 /* SKYSubscriptionSerializer.h */,
+				805A9A2E15E1591748F67011C3D4BD43 /* SKYSubscriptionSerializer.m */,
+				DF2EDABC1C97C91B76585BACDF68B38E /* SKYUnknownValue.h */,
+				A024A6D8F42CFB105D2E85B7F229B24D /* SKYUnknownValue.m */,
+				D51A31A4BDAE221C82EB070B2BF50958 /* SKYUnregisterDeviceOperation.h */,
+				F64E34652EC03A3315DF945A56B719D3 /* SKYUnregisterDeviceOperation.m */,
+				3A17F0AEDCC13ED37742AF566653FD8E /* SKYUploadAssetOperation.h */,
+				53A5F2A353688D521D2F63A3A4E25B14 /* SKYUploadAssetOperation.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		EDD5079D2C062BE3D7D723F5B0FBA726 /* Pods-photo-app */ = {
+			isa = PBXGroup;
+			children = (
+				26092BE2CB393BE936F2D4930A4C1A5E /* Info.plist */,
+				1182E6830882584DD8E2E91E87489165 /* Pods-photo-app.modulemap */,
+				6F3ADE04F2CD010E15609D8BFC14C72D /* Pods-photo-app-acknowledgements.markdown */,
+				5501A14135EFCB815012BA983A66000E /* Pods-photo-app-acknowledgements.plist */,
+				B0E2D8662C4C895543449BF726AA52EF /* Pods-photo-app-dummy.m */,
+				80E1D6DA99E0B2F9A9DC3FF4D3CB4E20 /* Pods-photo-app-frameworks.sh */,
+				51415255940B1B5789D3AD4C9407F166 /* Pods-photo-app-resources.sh */,
+				03B1E4C9585443D58F94BBA1AD0B2C5F /* Pods-photo-app-umbrella.h */,
+				EDCC5B20F48D7250F5788DC565B9A378 /* Pods-photo-app.debug.xcconfig */,
+				5F4DEF4FACF11C6B131A9AF298BBDA03 /* Pods-photo-app.release.xcconfig */,
+			);
+			name = "Pods-photo-app";
+			path = "Target Support Files/Pods-photo-app";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3D2A080C5CD4ED4520C6AEFA1D6BA26F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F11FAB91014130EE233A3429439D38D7 /* FMDatabase.h in Headers */,
+				A548833BE5FAD40830428F36E77D0F52 /* FMDatabaseAdditions.h in Headers */,
+				9B8D84996694C541CD3434386E0A081A /* FMDatabasePool.h in Headers */,
+				22554065FA07F1BFE5308A685394CB12 /* FMDatabaseQueue.h in Headers */,
+				96E70B43FC04BC99AED1BBD4FB1D7581 /* FMDB-umbrella.h in Headers */,
+				CCB74062CE0F4B8E5B7483599BC398DA /* FMDB.h in Headers */,
+				3E43906B70EB01C06F3AE17008B853B9 /* FMResultSet.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F525A9473CCD68E4EFAC550AAB0264F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EFC52ECC451650B846A250DBB6C8FBB /* Pods-photo-app-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB5AA35067FDA7D411CAE4D5F1E98542 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2135119B514DAEB4C6777565FF5612B /* SocketRocket-umbrella.h in Headers */,
+				950F1882788630DE7B6CF196F57EAF36 /* SocketRocket.h in Headers */,
+				20F0FFF74C4D07393E66DE05CAE87016 /* SRWebSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E04587B293C5CB05AEBC6615E8ED24D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DFAD00136820C81FFA1B992CE83FDDF /* NSError+SKYError.h in Headers */,
+				414673D8818AD222F9B335B5FC32D7D5 /* NSURLRequest+SKYRequest.h in Headers */,
+				B7D8608A055A674EBBD4E8A02B171D80 /* SKYAccessControl.h in Headers */,
+				05425C01D71666F5F0A77DB289B0C9D7 /* SKYAccessControl_Private.h in Headers */,
+				77E57EBD38CF73FF6E7E3EF83C79315D /* SKYAccessControlDeserializer.h in Headers */,
+				EDC30447488253C0CDB7458D3AD040FD /* SKYAccessControlEntry.h in Headers */,
+				9205B37A206E6489EE5ECE5B2CF37272 /* SKYAccessControlSerializer.h in Headers */,
+				F305A3D091C1CB201F490123914DD89D /* SKYAccessToken.h in Headers */,
+				D9774213451EE1CABFBC030108624B13 /* SKYAddRelationsOperation.h in Headers */,
+				13047D4B61B929CD3A294C6E52D3187C /* SKYAPSNotificationInfo.h in Headers */,
+				27E1A48A0C973A6D6C38DF7EE6643CCF /* SKYAsset.h in Headers */,
+				9BABF63099E3EEE231ACA2AD73624A73 /* SKYAsset_Private.h in Headers */,
+				0BDF2A5A7D54767D2EB99D1483C38B55 /* SKYAssignUserRoleOperation.h in Headers */,
+				2DE4A906373A7CC935DB60DC0ADEFE2D /* SKYAuthContainer+ForgotPassword.h in Headers */,
+				5BE79824C1396267CD65F8351129DC5B /* SKYAuthContainer.h in Headers */,
+				50A90D50FAFA19C637701B65E8D1B19D /* SKYAuthContainer_Private.h in Headers */,
+				F9506810026E3CC76C9AF34344F2CD84 /* SKYChangePasswordOperation.h in Headers */,
+				F04466702BE08D5BE2E0C3072B569754 /* SKYContainer.h in Headers */,
+				3241A530E511F34641FE5D134432B6E8 /* SKYContainer_Private.h in Headers */,
+				528DD23D84FF0FF0CCED5AC2D829DECA /* SKYDatabase.h in Headers */,
+				E873DA368BCE24C175F9F941CB4C585F /* SKYDatabase_Private.h in Headers */,
+				4DC52D95029ABE79429251450E952D48 /* SKYDatabaseOperation.h in Headers */,
+				A66DBE3BF649536444764A1D254D5DBB /* SKYDataSerialization.h in Headers */,
+				6B08D4668EBF0D321ACD2175E3B9C9E9 /* SKYDefineAdminRolesOperation.h in Headers */,
+				927FA361AB8948A51D6342DB23664224 /* SKYDefineCreationAccessOperation.h in Headers */,
+				371A5DDA257888BD17F0C179378CD895 /* SKYDefineDefaultAccessOperation.h in Headers */,
+				4D18A07CB1E3B3E9E9E4E803DB168522 /* SKYDeleteRecordsOperation.h in Headers */,
+				A6730587610701205B2CFA076B648916 /* SKYDeleteSubscriptionsOperation.h in Headers */,
+				B97FFB790C9BA16077CC6275C808F82F /* SKYDownloadAssetOperation.h in Headers */,
+				B32917D730E65936F073FF0B3021EA96 /* SKYError.h in Headers */,
+				DE4A0549AEB22D455CCB447F99CE69B1 /* SKYErrorCreator.h in Headers */,
+				F33D600B490EA9757280CF3EDEE96453 /* SKYFetchRecordsOperation.h in Headers */,
+				E5F4D06359B9365EFFB8CD20204F96F2 /* SKYFetchSubscriptionsOperation.h in Headers */,
+				F3DDF29EF1A10A6A2B3E66DA93455ADC /* SKYFetchUserRoleOperation.h in Headers */,
+				BECB71238F21F9B95E552D490672D6ED /* SKYGCMNotificationInfo.h in Headers */,
+				3DE74AAF1562249CB10594176A174D14 /* SKYGetAssetPostRequestOperation.h in Headers */,
+				0CC07376FBE5DA1EBE8B60798313948C /* SKYGetCurrentUserOperation.h in Headers */,
+				32653AF40787E9B34DBBB160E98D212D /* SKYKit-umbrella.h in Headers */,
+				3941314992A7A28EF36DAC691156AA30 /* SKYKit.h in Headers */,
+				BE56B71816166E3810F928E3449DAB6F /* SKYLambdaOperation.h in Headers */,
+				62E65E7C1AEDA13E224D33BBDDC900C8 /* SKYLocationSortDescriptor.h in Headers */,
+				411E9971628BBF893792B954CFB88B0D /* SKYLoginUserOperation.h in Headers */,
+				1130EE2AF02A67C0E6494911850E365E /* SKYLogoutUserOperation.h in Headers */,
+				9B281F161EA7359440B10C2D39BA7F63 /* SKYModifyRecordsOperation.h in Headers */,
+				7E14DE89EBAA8E72C89300C8330C3CDA /* SKYModifySubscriptionsOperation.h in Headers */,
+				D71A62D4006B321853AC8521BC9E7CAA /* SKYNotification.h in Headers */,
+				2B7148D786D2C5C13AE55E7BC977349A /* SKYNotification_Private.h in Headers */,
+				2E81EE6D645855321CB169F6B7698BCC /* SKYNotificationID.h in Headers */,
+				63F176FC0FDF98A6F069B4E0254D7B09 /* SKYNotificationInfo.h in Headers */,
+				DABC9EC39617D9F3E6459E3258710F3A /* SKYNotificationInfoDeserializer.h in Headers */,
+				84DE5EFE11A279D41CEB268023821FCC /* SKYNotificationInfoSerializer.h in Headers */,
+				5861CB58447D2735C0B8C2DE10E4A1C2 /* SKYOperation.h in Headers */,
+				037525F45CD21A8F15523BDB915D6903 /* SKYOperation_Private.h in Headers */,
+				5D2561899E34A6E17A838A64865E68C5 /* SKYOperationSubclass.h in Headers */,
+				8639F6CD6BB09A52FB00B5D1511981D1 /* SKYPostAssetOperation.h in Headers */,
+				AF1BD37963226B6B8766714399064FFD /* SKYPublicDatabase.h in Headers */,
+				A584B6719175112BC0C59B0EA835A481 /* SKYPubsubClient.h in Headers */,
+				455A0511A8209AA0E631FA4849579FDA /* SKYPubsubContainer.h in Headers */,
+				C019D6676F291E2A903D49C24164A089 /* SKYPubsubContainer_Private.h in Headers */,
+				28B51E63D7F02EA31A3B6F4189C1D52C /* SKYPushContainer.h in Headers */,
+				486D8B41D24F361BD329CAA92CAF73E4 /* SKYPushContainer_Private.h in Headers */,
+				029077F79167030669F93360C67E7C0B /* SKYQuery+Caching.h in Headers */,
+				6D322EAB32BB302883185B7D7EA80B72 /* SKYQuery.h in Headers */,
+				9BC1B30EFE0EC46EF673EDCF5B3A98A7 /* SKYQueryCache.h in Headers */,
+				6B17E282B5850BB21C18F35E5C9288DE /* SKYQueryCursor.h in Headers */,
+				AAB2B626C09EC878DE06025BA311E2BE /* SKYQueryDeserializer.h in Headers */,
+				E3CF02BC681A2EA34E2CF3890D43D22C /* SKYQueryOperation.h in Headers */,
+				5C4B2459067C7D2A1E3DC70CABB9B617 /* SKYQuerySerializer.h in Headers */,
+				342F9C9BF9346644F2588B703C05E621 /* SKYRecord.h in Headers */,
+				40EF8F269C0134B5E2952D344A1A9BF3 /* SKYRecord_Private.h in Headers */,
+				6DF840C932F6B214CD60B7A5A5CB2F45 /* SKYRecordChange.h in Headers */,
+				E587168FFDF602B68982A55F9687250F /* SKYRecordChange_Private.h in Headers */,
+				B4255B4A345CD1C6642793A9C6EB8EE0 /* SKYRecordDeserializer.h in Headers */,
+				013DED22064429D58C845E2F9DDD9C5B /* SKYRecordID.h in Headers */,
+				48B513DBE66D921C1860C1DFC2E4601D /* SKYRecordSerialization.h in Headers */,
+				27C126322F1E5289EC07237784D99F29 /* SKYRecordSerializer.h in Headers */,
+				BCE05B513D5A5CA60173A48DE21DF101 /* SKYRecordStorage.h in Headers */,
+				79C6147A951661F535CD843D7468DF3D /* SKYRecordStorage_Private.h in Headers */,
+				C858322BA49A84791D9C015B1716EFEA /* SKYRecordStorageBackingStore.h in Headers */,
+				832A3F04B066B881A6D18919BD6745BB /* SKYRecordStorageCoordinator.h in Headers */,
+				C4869730DC555377F13F905A9C2E6F11 /* SKYRecordStorageFileBackedMemoryStore.h in Headers */,
+				BD5364C8F8C9C08688515897DCB476F6 /* SKYRecordStorageMemoryStore.h in Headers */,
+				22B3BF7821F05B596CB056877C7BAD70 /* SKYRecordStorageMemoryStore_Private.h in Headers */,
+				8FDBD22B36999369E9B3958BC458B8D4 /* SKYRecordStorageSqliteStore.h in Headers */,
+				360D7B80C3A3C091FF0CF8A95CF13606 /* SKYRecordSynchronizer.h in Headers */,
+				C05767AE455D7A9C747A54490FA2E6F3 /* SKYReference.h in Headers */,
+				D4423ED11C5AB21146508D779E508627 /* SKYRegisterDeviceOperation.h in Headers */,
+				393509DC21D37545CB4A45119F682789 /* SKYRelation.h in Headers */,
+				9DF9925559E6298204483CFC77C71131 /* SKYRelationPredicate.h in Headers */,
+				1A43ACD0B100BC9EA113BD7F4A3D6D77 /* SKYRemoveRelationsOperation.h in Headers */,
+				78AD1977A9DAADDEC6FEA6C92E67B3D9 /* SKYRequest.h in Headers */,
+				3C083367FFE527761AB3DB8AC3369191 /* SKYResponse.h in Headers */,
+				648C583352AF37CBB3A7C5BDB946F97A /* SKYResultArrayResponse.h in Headers */,
+				7225CA1F130C5767CC44DA6CDD920E8C /* SKYRevokeUserRoleOperation.h in Headers */,
+				A8178961D8AF148B3C21C9FAF71B0F29 /* SKYRole.h in Headers */,
+				76F9DFE5036589B7F3D067081D1515BA /* SKYSendPushNotificationOperation.h in Headers */,
+				808C52193889139316D8368DC8ECED4F /* SKYSequence.h in Headers */,
+				FA61FFB2260E4E3973450E15826F1458 /* SKYSetUserDefaultRoleOperation.h in Headers */,
+				A07486FCDF6258A7031F3E5A23BD14DF /* SKYSignupUserOperation.h in Headers */,
+				59CAC22D81434AA7B6F5864B9710AD27 /* SKYSubscription.h in Headers */,
+				5EA0891F0ADB53FD14D458AA5F5837A0 /* SKYSubscriptionDeserializer.h in Headers */,
+				D5262D7783A87D44D72C2A0289E5083F /* SKYSubscriptionSerialization.h in Headers */,
+				B6817A965BA1F9580145BCD837DBB786 /* SKYSubscriptionSerializer.h in Headers */,
+				AC479C535529D6DBF97BCC8BD04A5DCA /* SKYUnknownValue.h in Headers */,
+				FAB7EF364C9892FB359E4099CADA4B8A /* SKYUnregisterDeviceOperation.h in Headers */,
+				C3809054A7E2884A87749C9A43333B33 /* SKYUploadAssetOperation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		251BAD17812F7EBF6532EACF66F941C3 /* FMDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B0566FF0CE681AC326D316CEC45A8CF /* Build configuration list for PBXNativeTarget "FMDB" */;
+			buildPhases = (
+				8FE0D4B503A94502F3431DC0DCB58040 /* Sources */,
+				EEFB61A65EB8DA6653B544822EB9CE44 /* Frameworks */,
+				3D2A080C5CD4ED4520C6AEFA1D6BA26F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FMDB;
+			productName = FMDB;
+			productReference = 45A5992B578557D0A63B5B924D978047 /* FMDB.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		394388AFEC36B54D35929EECCE12BAE4 /* Pods-photo-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 771673312F30F01CCE2F78C6E2C2C65A /* Build configuration list for PBXNativeTarget "Pods-photo-app" */;
+			buildPhases = (
+				6FC1F3F45D7253B276DEF8EA890B968F /* Sources */,
+				68E9013B73C535D6CE8F1859B45D4E28 /* Frameworks */,
+				8F525A9473CCD68E4EFAC550AAB0264F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49D37713F7A2073F389F1E1AC366DB2C /* PBXTargetDependency */,
+				624BDE02CC386E6100A3BEBF7DB7FA48 /* PBXTargetDependency */,
+				BB3852177AC621892D122460590B38C0 /* PBXTargetDependency */,
+			);
+			name = "Pods-photo-app";
+			productName = "Pods-photo-app";
+			productReference = 3BFC8D29BF10E18D9A2100A01836069F /* Pods_photo_app.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		80A24F12ED9CD6238F75537A151D9645 /* SKYKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7229130095DF9A40FEC8A71E96B1BB1 /* Build configuration list for PBXNativeTarget "SKYKit" */;
+			buildPhases = (
+				5999183FDD711172C9FF8364FF624B36 /* Sources */,
+				E573A32F046CF4E2795AD3B2BB922312 /* Frameworks */,
+				E04587B293C5CB05AEBC6615E8ED24D6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A39225B64A2C623F7BAFC1EA0021B5C7 /* PBXTargetDependency */,
+				53D1445720366BB446EE42B7E74B3E37 /* PBXTargetDependency */,
+			);
+			name = SKYKit;
+			productName = SKYKit;
+			productReference = 5223F36BB3E218801C390A20EA52CE35 /* SKYKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		97824112F85DEC024351A7BB3E8AF846 /* SocketRocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0225C8B75F3438DE714AD4B38BFFC4E /* Build configuration list for PBXNativeTarget "SocketRocket" */;
+			buildPhases = (
+				2B6BBFC0B2049FAA2FF91DBDC4F3EA7A /* Sources */,
+				74342CDC310C846938B48B155FC97C11 /* Frameworks */,
+				CB5AA35067FDA7D411CAE4D5F1E98542 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocketRocket;
+			productName = SocketRocket;
+			productReference = 3050121FB6E3A579C1097A187E6C46BC /* SocketRocket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 6387516D7E2EAEFA7E529584FBDC3659 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				251BAD17812F7EBF6532EACF66F941C3 /* FMDB */,
+				394388AFEC36B54D35929EECCE12BAE4 /* Pods-photo-app */,
+				80A24F12ED9CD6238F75537A151D9645 /* SKYKit */,
+				97824112F85DEC024351A7BB3E8AF846 /* SocketRocket */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B6BBFC0B2049FAA2FF91DBDC4F3EA7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97E90C98A9180426C9A3CF44E0E843A0 /* SocketRocket-dummy.m in Sources */,
+				E8158CDF02AC9C46927EB7B469653C82 /* SRWebSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5999183FDD711172C9FF8364FF624B36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80AABBAF5DB1A706634C88A7AB2E1FC6 /* NSError+SKYError.m in Sources */,
+				97B743E324335B13E736EC18A8F8CB48 /* NSURLRequest+SKYRequest.m in Sources */,
+				03F795E6A730EBB9D7A3D9B656A9EF85 /* SKYAccessControl.m in Sources */,
+				280354FD086A6958F7B1377A129A1228 /* SKYAccessControlDeserializer.m in Sources */,
+				099E03278D4F3E747DF21338DFE832B6 /* SKYAccessControlEntry.m in Sources */,
+				7C3F3A40E65481D192E8304E83B5B41E /* SKYAccessControlSerializer.m in Sources */,
+				7FF5349DFE126647CC9905AF980ACB2F /* SKYAccessToken.m in Sources */,
+				23FBF78950A63D3F2C3711E82FBCE271 /* SKYAddRelationsOperation.m in Sources */,
+				B3CD3C4D52791C857E2001868724EA3C /* SKYAPSNotificationInfo.m in Sources */,
+				BCEB2C5202A3F299449DC14E61EFEAD6 /* SKYAsset.m in Sources */,
+				D705B1648B4F6924D13ACA70620315BF /* SKYAssignUserRoleOperation.m in Sources */,
+				2A6CDF195CA2241755476703CFC0FF43 /* SKYAuthContainer+ForgotPassword.m in Sources */,
+				E3477E2501691F19820806C9922EFFF5 /* SKYAuthContainer.m in Sources */,
+				E133A7E84B8C5C1BEB701F07056DA143 /* SKYChangePasswordOperation.m in Sources */,
+				A94544C8708F33BD6B8C28A67462E7F0 /* SKYContainer.m in Sources */,
+				EBC3E4511D1EA1334E6480A8EA28F4F2 /* SKYDatabase.m in Sources */,
+				8D310EC297727286DFD040EC7997B2AD /* SKYDatabaseOperation.m in Sources */,
+				0235B653B776518B85B055A4A99AC3A0 /* SKYDataSerialization.m in Sources */,
+				513EA51A2839FA2A0995D1C7CABF6936 /* SKYDefineAdminRolesOperation.m in Sources */,
+				A3880D9FF2C23FB07898E2B35E12B8CF /* SKYDefineCreationAccessOperation.m in Sources */,
+				D1B7374017AEAF829CD6F89A4F30D133 /* SKYDefineDefaultAccessOperation.m in Sources */,
+				AB55BC42C58FC5780A15361D971E61AB /* SKYDeleteRecordsOperation.m in Sources */,
+				6CFF004E26ACC3DCF663A755B2E4F5F1 /* SKYDeleteSubscriptionsOperation.m in Sources */,
+				45CFDBB0FF65E7DAF22E8B7D4B9F15C1 /* SKYDownloadAssetOperation.m in Sources */,
+				95C9D08726683AAAD14387D1EA34E049 /* SKYError.m in Sources */,
+				B235BB542689E54087B9E07A767316A7 /* SKYErrorCreator.m in Sources */,
+				020B843A8570A45091FD6C7495C88B77 /* SKYFetchRecordsOperation.m in Sources */,
+				698577554DC2FB0B6207D869A6CA2771 /* SKYFetchSubscriptionsOperation.m in Sources */,
+				0D4C243BFA38580E28DAB95D26D85D1D /* SKYFetchUserRoleOperation.m in Sources */,
+				FE1924853553BDB9484651F4A74548EE /* SKYGCMNotificationInfo.m in Sources */,
+				27BCF950D16BFF525EEAC005A0C3B78E /* SKYGetAssetPostRequestOperation.m in Sources */,
+				43F2E96DAD503CEBD6D1D4BF9CD64DD6 /* SKYGetCurrentUserOperation.m in Sources */,
+				AA7BA378CBA999DD66B3A18A38B3E347 /* SKYKit-dummy.m in Sources */,
+				E96D4A31417DAED6BBE700924F7FFC08 /* SKYLambdaOperation.m in Sources */,
+				04E890849B715353A4BC3DAD08B118B2 /* SKYLocationSortDescriptor.m in Sources */,
+				953C268433F234C2569D8F936B7F3DE8 /* SKYLoginUserOperation.m in Sources */,
+				676100CF4C1D4A80957F15DEBEDCAB4C /* SKYLogoutUserOperation.m in Sources */,
+				E84455200DEB468911E15D3E31A5A148 /* SKYModifyRecordsOperation.m in Sources */,
+				2EAE3C87CC201B9D67FBDE8EEC5F4466 /* SKYModifySubscriptionsOperation.m in Sources */,
+				BD6EE60946F7162F9795EB38BF3403BC /* SKYNotification.m in Sources */,
+				8D940E55B574642847CCB61EC43EFA3A /* SKYNotificationID.m in Sources */,
+				FCEAB168310F3F867329055C590EB3FB /* SKYNotificationInfo.m in Sources */,
+				8AE18BCB99BA7BD7C861858EE4092604 /* SKYNotificationInfoDeserializer.m in Sources */,
+				B461478A16E07F991866E33FBF064B86 /* SKYNotificationInfoSerializer.m in Sources */,
+				C864A85C4CD1589F715BA3E6ADF58723 /* SKYOperation.m in Sources */,
+				C68378FC69B23973950099A66BB5DD12 /* SKYPostAssetOperation.m in Sources */,
+				5608351A3B59B920510A2E9261B7657D /* SKYPublicDatabase.m in Sources */,
+				FC38E5A010D7A312C268198A8AEC73BD /* SKYPubsubClient.m in Sources */,
+				51EC3BF650B160D033C0F22EFDDD6385 /* SKYPubsubContainer.m in Sources */,
+				2C6EA7A55835D5FBC01A9D184A3FA12D /* SKYPushContainer.m in Sources */,
+				884CDCD50A5B9124118D188A0CBDDE1B /* SKYQuery+Caching.m in Sources */,
+				95985182DAE1BFBDAC8CAAC823B854DC /* SKYQuery.m in Sources */,
+				A4C3ADD82E02973261BD2C4574D1D25F /* SKYQueryCache.m in Sources */,
+				B412319E084EC63038B5C22DB97B4934 /* SKYQueryCursor.m in Sources */,
+				BFC46FB3913D536B5838D51BDA668717 /* SKYQueryDeserializer.m in Sources */,
+				B688958B49F95EE7C019F6664B7379AD /* SKYQueryOperation.m in Sources */,
+				9AB9AB2744763E8D1750099BC985F7B6 /* SKYQuerySerializer.m in Sources */,
+				F2AFEF3128051EA00DD6F95BA62665A9 /* SKYRecord.m in Sources */,
+				093BC20D2C18A930AC73FB2BC1370EF6 /* SKYRecordChange.m in Sources */,
+				03E35390B79C00A56F858823933607D5 /* SKYRecordDeserializer.m in Sources */,
+				10AE0AF4C86ED7A829753E50DEE86B26 /* SKYRecordID.m in Sources */,
+				8D2B5A6E02E407D95D87F4EC78BB512C /* SKYRecordSerialization.m in Sources */,
+				58FA3946F69836F8181DCDC4B48D3E08 /* SKYRecordSerializer.m in Sources */,
+				04CD5D1075938E5E922A11BD806DFEBA /* SKYRecordStorage.m in Sources */,
+				4B8D50D3987C8B9777BB5B2172893565 /* SKYRecordStorageCoordinator.m in Sources */,
+				29059E695DE234813401B8BCE2BA3B34 /* SKYRecordStorageFileBackedMemoryStore.m in Sources */,
+				FF6B29B567CE2522091541995F429064 /* SKYRecordStorageMemoryStore.m in Sources */,
+				A8A0DBAFBC87D7797E5EF0C2AFC01141 /* SKYRecordStorageSqliteStore.m in Sources */,
+				2F92437D4F9D30388061F12BAB973D19 /* SKYRecordSynchronizer.m in Sources */,
+				2978D9E102ECEB46835311BCF5F70E71 /* SKYReference.m in Sources */,
+				414C22ED06DC97D70F8F116620CD4135 /* SKYRegisterDeviceOperation.m in Sources */,
+				2F5A8B23BC191000FDCB5D5EF7E2D57A /* SKYRelation.m in Sources */,
+				A7B5A45DA1570FA741757247CE88DAB2 /* SKYRelationPredicate.m in Sources */,
+				EE95F11821187C83DA4890906B68EBF1 /* SKYRemoveRelationsOperation.m in Sources */,
+				9A0540908F881BFEE7D8D0233BB5592F /* SKYRequest.m in Sources */,
+				C91CE57C2627479CD0DB6BD7E3BEE58A /* SKYResponse.m in Sources */,
+				8881FDCDAB76ED34F8A46373484A44DA /* SKYResultArrayResponse.m in Sources */,
+				4292442CD44B41CB7DB380D6298D384F /* SKYRevokeUserRoleOperation.m in Sources */,
+				D9611B3BBCC486BF275F87B89DAD4A76 /* SKYRole.m in Sources */,
+				878F3B50F609B36A3923A1742C77E074 /* SKYSendPushNotificationOperation.m in Sources */,
+				0E0F3CCBC77F3F6392B432607589BC48 /* SKYSequence.m in Sources */,
+				7B30B5D0418B1CBDFDAB89D9F0342C35 /* SKYSetUserDefaultRoleOperation.m in Sources */,
+				5A80E5F5684F066BF8D3445931C8A104 /* SKYSignupUserOperation.m in Sources */,
+				AED43BDE215D535DCBFBFA98229D7653 /* SKYSubscription.m in Sources */,
+				9F2984A3162B462147358BB9A1870E36 /* SKYSubscriptionDeserializer.m in Sources */,
+				C5C7CC2F67E2F1E879969EED9573BB55 /* SKYSubscriptionSerialization.m in Sources */,
+				82FF308FBAF2CDB96B35096A788FC049 /* SKYSubscriptionSerializer.m in Sources */,
+				3C500618A67F0A1198469B97CF5000E2 /* SKYUnknownValue.m in Sources */,
+				0EB7F538FBBC4ABE47EC915D8ACE456C /* SKYUnregisterDeviceOperation.m in Sources */,
+				16003D490E1936257F923EBA71A926F3 /* SKYUploadAssetOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FC1F3F45D7253B276DEF8EA890B968F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C9CA0DC8BE48534155EED32E51D70B4 /* Pods-photo-app-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FE0D4B503A94502F3431DC0DCB58040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F097E2269EF1BD238AD7449D796445 /* FMDatabase.m in Sources */,
+				9C11A290C9C5866A185A54F1EC04E2BB /* FMDatabaseAdditions.m in Sources */,
+				C605A44DF96E7FCACF7D6E37B62F795D /* FMDatabasePool.m in Sources */,
+				A1B5D80A8998311B8C9043E6942925E6 /* FMDatabaseQueue.m in Sources */,
+				D5991941DC41DDDDDACAE0B5D47A4639 /* FMDB-dummy.m in Sources */,
+				87ECA447DB887426665260651B7F147E /* FMResultSet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49D37713F7A2073F389F1E1AC366DB2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FMDB;
+			target = 251BAD17812F7EBF6532EACF66F941C3 /* FMDB */;
+			targetProxy = 1AC256885F46431EC2D2D001BA045CB0 /* PBXContainerItemProxy */;
+		};
+		53D1445720366BB446EE42B7E74B3E37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SocketRocket;
+			target = 97824112F85DEC024351A7BB3E8AF846 /* SocketRocket */;
+			targetProxy = 3F251DB3C89CE6F1CDEBC26A6F47A4FD /* PBXContainerItemProxy */;
+		};
+		624BDE02CC386E6100A3BEBF7DB7FA48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SKYKit;
+			target = 80A24F12ED9CD6238F75537A151D9645 /* SKYKit */;
+			targetProxy = A3367EA037E890E01B9916B1430C6F04 /* PBXContainerItemProxy */;
+		};
+		A39225B64A2C623F7BAFC1EA0021B5C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FMDB;
+			target = 251BAD17812F7EBF6532EACF66F941C3 /* FMDB */;
+			targetProxy = 9154D927D89390FBA81B6BC074744B69 /* PBXContainerItemProxy */;
+		};
+		BB3852177AC621892D122460590B38C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SocketRocket;
+			target = 97824112F85DEC024351A7BB3E8AF846 /* SocketRocket */;
+			targetProxy = DFE75176EA6C81CADD52F66253837136 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1C33C525DB3D34DBD78A35C55B3F9AF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC7C936121E1A0416C7D2529723E268D /* SKYKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SKYKit/SKYKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SKYKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SKYKit/SKYKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SKYKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2E20ABDBC584165B674698AC83FAA0A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDCC5B20F48D7250F5788DC565B9A378 /* Pods-photo-app.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-photo-app/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-photo-app/Pods-photo-app.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_photo_app;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		643C76AA582046977B7877822ED7A258 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		822E830126204F9E22E2E79E82679EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E77B0BD7C4396170E2702BAEF2BCE382 /* FMDB.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FMDB/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FMDB/FMDB.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FMDB;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AEFF37924F65210A21B8055F53EC4401 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC7C936121E1A0416C7D2529723E268D /* SKYKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SKYKit/SKYKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SKYKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SKYKit/SKYKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SKYKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BCE57C7533C5E182C2F4BFFFB2BF55AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F4DEF4FACF11C6B131A9AF298BBDA03 /* Pods-photo-app.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-photo-app/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-photo-app/Pods-photo-app.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_photo_app;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C03B8870130C98D1B02B59D003687524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1C430F7D72D4249FCF7F43257B6E04B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 759F96CC8665EF575A1F71545CD0A233 /* SocketRocket.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SocketRocket/SocketRocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SocketRocket/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SocketRocket/SocketRocket.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SocketRocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D267A5CD402F1184D4DBF9E92C080D8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E77B0BD7C4396170E2702BAEF2BCE382 /* FMDB.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FMDB/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FMDB/FMDB.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FMDB;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DB714BD4624EF12FAD99001200D5FD8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 759F96CC8665EF575A1F71545CD0A233 /* SocketRocket.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SocketRocket/SocketRocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SocketRocket/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SocketRocket/SocketRocket.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SocketRocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				643C76AA582046977B7877822ED7A258 /* Debug */,
+				C03B8870130C98D1B02B59D003687524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B0566FF0CE681AC326D316CEC45A8CF /* Build configuration list for PBXNativeTarget "FMDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				822E830126204F9E22E2E79E82679EB2 /* Debug */,
+				D267A5CD402F1184D4DBF9E92C080D8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		771673312F30F01CCE2F78C6E2C2C65A /* Build configuration list for PBXNativeTarget "Pods-photo-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E20ABDBC584165B674698AC83FAA0A8 /* Debug */,
+				BCE57C7533C5E182C2F4BFFFB2BF55AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7229130095DF9A40FEC8A71E96B1BB1 /* Build configuration list for PBXNativeTarget "SKYKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C33C525DB3D34DBD78A35C55B3F9AF2 /* Debug */,
+				AEFF37924F65210A21B8055F53EC4401 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0225C8B75F3438DE714AD4B38BFFC4E /* Build configuration list for PBXNativeTarget "SocketRocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB714BD4624EF12FAD99001200D5FD8A /* Debug */,
+				C1C430F7D72D4249FCF7F43257B6E04B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

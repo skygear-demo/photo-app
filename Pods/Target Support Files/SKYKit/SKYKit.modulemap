@@ -1,0 +1,6 @@
+framework module SKYKit {
+  umbrella header "SKYKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
