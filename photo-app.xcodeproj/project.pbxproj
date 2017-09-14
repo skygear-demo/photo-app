@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63BF3BD11F6B1220006D2A73 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BF3BD01F6B1220006D2A73 /* FeedCell.swift */; };
 		63D5979F1F6A981A00AF0A10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D5979E1F6A981A00AF0A10 /* AppDelegate.swift */; };
 		63D597A11F6A981A00AF0A10 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D597A01F6A981A00AF0A10 /* FirstViewController.swift */; };
 		63D597A31F6A981A00AF0A10 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D597A21F6A981A00AF0A10 /* SecondViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		1B6C1A424F9EEC81A8DED622 /* Pods-photo-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photo-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-photo-app/Pods-photo-app.debug.xcconfig"; sourceTree = "<group>"; };
+		63BF3BD01F6B1220006D2A73 /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		63D5979B1F6A981A00AF0A10 /* photo-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "photo-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D5979E1F6A981A00AF0A10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63D597A01F6A981A00AF0A10 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				63D597A71F6A981A00AF0A10 /* Assets.xcassets */,
 				63D597A91F6A981A00AF0A10 /* LaunchScreen.storyboard */,
 				63D597AC1F6A981A00AF0A10 /* Info.plist */,
+				63BF3BD01F6B1220006D2A73 /* FeedCell.swift */,
 			);
 			path = "photo-app";
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63D597A31F6A981A00AF0A10 /* SecondViewController.swift in Sources */,
+				63BF3BD11F6B1220006D2A73 /* FeedCell.swift in Sources */,
 				63D5979F1F6A981A00AF0A10 /* AppDelegate.swift in Sources */,
 				63D597A11F6A981A00AF0A10 /* FirstViewController.swift in Sources */,
 			);
@@ -383,6 +387,7 @@
 				63D597B11F6A981A00AF0A10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
