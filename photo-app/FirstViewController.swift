@@ -13,9 +13,14 @@ class FirstViewController: UIViewController {
     @IBOutlet var usernameField: UITextField!
     @IBOutlet var passwordField: UITextField!
     
+    @IBOutlet var loggedInLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        self.refreshView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,6 +37,18 @@ class FirstViewController: UIViewController {
         login()
     }
     
+    @IBAction func logoutDidPress(_ sender: AnyObject) {
+        logout()
+    }
+    
+    func refreshView() {
+        if (SKYContainer.default().auth.currentUser != nil) {
+            loggedInLabel.text = "Logged in as \(SKYContainer.default().auth.currentUser?.object(forKey: "username") as! String)"
+        } else {
+             loggedInLabel.text = "Please login to proceed."
+        }
+    }
+    
     func signup() {
         let name: String = self.usernameField.text!
         let password: String = self.passwordField.text!
@@ -42,6 +59,7 @@ class FirstViewController: UIViewController {
                 return
             }
             print("Signed up as: \(user)")
+            self.refreshView()
         }
     }
     
@@ -55,6 +73,18 @@ class FirstViewController: UIViewController {
                 return
             }
             print("Logged in as: \(user)")
+            self.refreshView()
+        }
+    }
+    
+    func logout() {
+        SKYContainer.default().auth.logout { (user, error) in
+            if (error != nil) {
+                NSLog(error.debugDescription)
+                return
+            }
+            print("Logged out")
+            self.refreshView()
         }
     }
 }
