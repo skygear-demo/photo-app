@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import SKYKit
 
 class SecondViewController: UIViewController {
+    @IBOutlet var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +21,19 @@ class SecondViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.refreshView()
+    }
 
+    func refreshView() {
+        if (SKYContainer.default().auth.currentUser != nil) {
+            self.tableView.isHidden = false
+        } else {
+                self.tableView.isHidden = true
+        }
+        
+    }
 
 }
 
