@@ -59,7 +59,7 @@ class FirstViewController: UIViewController {
                 self.showAlert(title:"Cannot signup", message:"Please try again", actionText:"OK")
                 return
             }
-            print("Signed up as: \(user)")
+            print("Signed up as: \(String(describing: user))")
             self.refreshView()
         }
     }
