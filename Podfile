@@ -7,5 +7,6 @@ target 'photo-app' do
 
   # Pods for photo-app
   pod 'SKYKit'
+  pod 'SDWebImage', '~> 4.0'
 
 end

@@ -8,6 +8,7 @@
 
 import UIKit
 import SKYKit
+import SDWebImage
 
 class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var tableView: UITableView!
@@ -83,16 +84,19 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         
         let imageAsset = post?.object(forKey: "asset") as? SKYAsset
-        if let imageUrl = imageAsset?.url {
-            print("URL: \(String(describing: imageAsset?.url))")
-            URLSession.shared.dataTask(with: imageUrl) { data, response, error in
-                if let imageData = data {
-                    DispatchQueue.main.async {
-                        newsCell.feedImageView.image = UIImage(data: imageData)
-                    }
-                }
-                }.resume()
-        }
+//        if let imageUrl = imageAsset?.url {
+//            print("URL: \(String(describing: imageAsset?.url))")
+//            URLSession.shared.dataTask(with: imageUrl) { data, response, error in
+//                if let imageData = data {
+//                    DispatchQueue.main.async {
+//                        newsCell.feedImageView.image = UIImage(data: imageData)
+//                    }
+//                }
+//                }.resume()
+//        }
+        
+        
+        newsCell.feedImageView.sd_setImage(with: URL(string:(imageAsset?.url.absoluteString)!), placeholderImage: UIImage(named: "placeholder.png"), options:.refreshCached)
 
         return newsCell
 
