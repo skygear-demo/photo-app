@@ -114,13 +114,61 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         present(imagePicker, animated: true, completion: nil)
     }
     
-
+    func presentPhotoDetailAlert(uploadedAsset: SKYAsset) {
+        let alertController = UIAlertController(title: "Photo Detail", message: "Please input details below:", preferredStyle: .alert)
+        
+        let confirmAction = UIAlertAction(title: "Save", style: .default) { (_) in
+            let titleField = alertController.textFields![0] as UITextField
+            let contentField = alertController.textFields![1] as UITextField
+            
+            let post = SKYRecord(recordType: "post")
+            post.setObject(titleField.text!, forKey: "title" as NSCopying)
+            post.setObject(contentField.text!, forKey: "content" as NSCopying)
+            post.setObject(SKYSequence(), forKey: "order" as NSCopying)
+            
+            post.setObject(uploadedAsset, forKey: "asset" as NSCopying)
+            
+            SKYContainer.default().publicCloudDatabase.save(post, completion: { (record, error) in
+                if (error != nil) {
+                    print("error saving post: \(String(describing: error))")
+                    return
+                }
+                
+                self.posts.insert(post, at: 0)
+                let indexPath = IndexPath(row: 0, section: 0)
+                self.tableView.insertRows(at: [indexPath], with: .automatic)
+                self.showAlert(title: "Post Saved", message: "This post is shared!", actionText: "OK")
+            })
+        }
+        
+        let cancelAction = UIAlertAction(title: "Discard", style: .cancel) { (_) in
+            self.showAlert(title: "Post Discard", message: "This post isn't saved", actionText: "OK")
+        }
+        
+        alertController.addTextField { (textField) in
+            textField.placeholder = "title"
+        }
+        
+        alertController.addTextField { (textField) in
+            textField.placeholder = "content"
+        }
+        
+        alertController.addAction(confirmAction)
+        alertController.addAction(cancelAction)
+        
+        present(alertController, animated: true, completion: nil)
+    }
+    
+    func showAlert(title: String, message: String, actionText: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: actionText, style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
 }
 
 extension SecondViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     // Add implementation here
-    
-    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage,
             let resizedImageData = PhotoHelper.resize(image: pickedImage, maxWidth: 800, quality: 0.9) {
@@ -128,23 +176,8 @@ extension SecondViewController: UINavigationControllerDelegate, UIImagePickerCon
             PhotoHelper.upload(imageData: resizedImageData, onCompletion: {uploadedAsset in
                 if (uploadedAsset != nil) {
                     print("has photo")
-                    let post = SKYRecord(recordType: "post")
-                    post.setObject("title", forKey: "title" as NSCopying)
-                    post.setObject("content", forKey: "content" as NSCopying)
-                    post.setObject(SKYSequence(), forKey: "order" as NSCopying)
                     
-                    post.setObject(uploadedAsset!, forKey: "asset" as NSCopying)
-
-                    SKYContainer.default().publicCloudDatabase.save(post, completion: { (record, error) in
-                        if (error != nil) {
-                            print("error saving post: \(String(describing: error))")
-                            return
-                        }
-                        
-                        self.posts.insert(post, at: 0)
-                        let indexPath = IndexPath(row: 0, section: 0)
-                        self.tableView.insertRows(at: [indexPath], with: .automatic)
-                    })
+                    self.presentPhotoDetailAlert(uploadedAsset: uploadedAsset!)
                     
 
                 } else {
