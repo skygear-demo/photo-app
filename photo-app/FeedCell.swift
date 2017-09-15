@@ -10,6 +10,7 @@ import UIKit
 
 class FeedCell: UITableViewCell {
 
+    @IBOutlet var feedImageView: UIImageView!
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var contentLabel: UILabel!
 

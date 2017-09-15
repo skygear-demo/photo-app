@@ -12,7 +12,7 @@ import SKYKit
 class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var tableView: UITableView!
 
-    var posts = [AnyObject]()
+    var posts = [Any]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +27,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewWillAppear(_ animated: Bool) {
         self.refreshView()
+        self.loadPosts()
     }
 
     func refreshView() {
@@ -37,9 +38,11 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
     }
     
-    func onCompletion(_ posts:[Any]) {
-        print("There are \(posts.count) posts")
-        print(posts)
+    func onCompletion(_ records:[Any]) {
+        print("There are \(records.count) posts")
+        print(records)
+        self.posts = records
+        self.tableView.reloadData()
     }
     
     func loadPosts() {
@@ -51,7 +54,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         publicDB.perform(query, completionHandler: { posts, error in
             if let error = error {
                 print("Error retrieving photos: \(error)")
-                self.onCompletion(posts!)
+//                self.onCompletion(posts!)
             } else {
                 self.onCompletion(posts!)
             }
@@ -68,9 +71,27 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         // Configure the cell...
         let record = self.posts[indexPath.row]
         let post = record as? SKYRecord
-        newsCell.titleLabel.text = post?.object(forKey: "title") as? String
-        newsCell.contentLabel.text = post?.object(forKey: "content") as? String
         
+        let title = post?.object(forKey: "title" as NSCopying) as? String
+        let content = post?.object(forKey: "content" as NSCopying) as? String
+        
+        newsCell.titleLabel.text = title
+        newsCell.contentLabel.text = content
+        newsCell.feedImageView.image = UIImage(named: "Placeholder")
+        
+        
+        let imageAsset = post?.object(forKey: "asset") as? SKYAsset
+        if let imageUrl = imageAsset?.url {
+            print("URL: \(String(describing: imageAsset?.url))")
+            URLSession.shared.dataTask(with: imageUrl) { data, response, error in
+                if let imageData = data {
+                    DispatchQueue.main.async {
+                        newsCell.feedImageView.image = UIImage(data: imageData)
+                    }
+                }
+                }.resume()
+        }
+
         return newsCell
 
     }
@@ -83,6 +104,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBAction func addPhotoButtonDidPress(_ sender: AnyObject) {
         self.presentImagePicker()
     }
+
     func presentImagePicker() {
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
@@ -96,12 +118,42 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
 }
 
 extension SecondViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate {
-    
     // Add implementation here
+    
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage
+        if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage,
+            let resizedImageData = PhotoHelper.resize(image: pickedImage, maxWidth: 800, quality: 0.9) {
+            
+            PhotoHelper.upload(imageData: resizedImageData, onCompletion: {uploadedAsset in
+                if (uploadedAsset != nil) {
+                    print("has photo")
+                    let post = SKYRecord(recordType: "post")
+                    post.setObject("title", forKey: "title" as NSCopying)
+                    post.setObject("content", forKey: "content" as NSCopying)
+                    post.setObject(SKYSequence(), forKey: "order" as NSCopying)
+                    
+                    post.setObject(uploadedAsset!, forKey: "asset" as NSCopying)
+
+                    SKYContainer.default().publicCloudDatabase.save(post, completion: { (record, error) in
+                        if (error != nil) {
+                            print("error saving post: \(String(describing: error))")
+                            return
+                        }
+                        
+                        self.posts.insert(post, at: 0)
+                        let indexPath = IndexPath(row: 0, section: 0)
+                        self.tableView.insertRows(at: [indexPath], with: .automatic)
+                    })
+                    
+
+                } else {
+                    print("no photo")
+                }
+            })
+        }
         dismiss(animated: true, completion: {
+            
         })
-    }
-}
+    }}
 
