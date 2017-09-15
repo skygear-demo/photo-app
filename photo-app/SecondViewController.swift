@@ -51,11 +51,13 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let sortDescriptor = NSSortDescriptor(key: "_created_at", ascending: false)
         query.sortDescriptors = [sortDescriptor]
         
-        publicDB.perform(query, completionHandler: { posts, error in
+        publicDB.performCachedQuery(query, completionHandler: { posts, cached, error in
             if let error = error {
                 print("Error retrieving photos: \(error)")
-//                self.onCompletion(posts!)
             } else {
+                if(cached) {
+                    print("This is a cached result")
+                }
                 self.onCompletion(posts!)
             }
         })
