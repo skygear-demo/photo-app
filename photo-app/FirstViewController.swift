@@ -56,6 +56,7 @@ class FirstViewController: UIViewController {
         SKYContainer.default().auth.signup(withUsername: name, password: password) { (user, error) in
             if (error != nil) {
                 NSLog(error.debugDescription)
+                self.showAlert(title:"Cannot signup", message:"Please try again", actionText:"OK")
                 return
             }
             print("Signed up as: \(user)")
@@ -70,6 +71,7 @@ class FirstViewController: UIViewController {
         SKYContainer.default().auth.login(withUsername: name, password: password) { (user, error) in
             if (error != nil) {
                 NSLog(error.debugDescription)
+                self.showAlert(title:"Cannot login", message:"Please try again", actionText:"OK")
                 return
             }
             print("Logged in as: \(user)")
@@ -86,6 +88,13 @@ class FirstViewController: UIViewController {
             print("Logged out")
             self.refreshView()
         }
+    }
+    
+    
+    func showAlert(title: String, message: String, actionText: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: actionText, style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }
 
