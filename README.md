@@ -183,7 +183,7 @@ self.present(alert, animated: true, completion: nil)
 
  - We will use a table view to show the photo feed items. We will make the second view controller the uitabledatasourcedelegate 
 
-### Step 3 - 
+### Step 3 - Loading posts
 
 1. Loading and displaying records from the default skygear server 
  - Filling in the data
@@ -269,7 +269,7 @@ self.present(alert, animated: true, completion: nil)
     }
 ```
 
-[Step 5]
+### Step 5 (The completed project)
 
 ### Complete!
 
